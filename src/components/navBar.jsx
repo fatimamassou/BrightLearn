@@ -1,19 +1,24 @@
 import logo from "../pectures/logo.png";
+import Button from "./buttons";
 import NavBarLinks from "./NavBarLinks";
 export default function NavBar(){
     return(
-        <div className="flex items-center justify-center"> 
+        <div className='flex items-center justify-between px-6 py-2'> 
             <img
             src={logo} 
-            alt="lhghehgelh" 
-            className="w-[200px]"
+            alt="Logo" 
+            className="w-[250px]"
             />
-            <div className="px-2">
-                <NavBarLinks text="Home" to="home"/>
+            <div className="flex space-x-14">
+                <NavBarLinks text="About" to="about" />
                 <NavBarLinks text="Tutors" to="totors"/>
-                <NavBarLinks text="About" to="about"/>
+                <NavBarLinks text="Home" to="home"/>
                 <NavBarLinks text="Contact" to="contact"/>
+            </div>
 
+            <div className="flex space-x-2">
+                <Button text="Log In" type="secondary"/>
+                <Button text="Sign Up" type="primary"/>
             </div>
         </div>
     );
