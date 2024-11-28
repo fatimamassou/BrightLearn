@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
         <NavBar />
         <div className="w-full flex justify-center aitems-center">
-          <SearchInput width={1/2} height={80} />
+          <SearchInput width='w-2/6' height='h-12' />
         </div>
     </BrowserRouter>
   );

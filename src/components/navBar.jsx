@@ -3,7 +3,7 @@ import Button from "./buttons";
 import NavBarLinks from "./NavBarLinks";
 export default function NavBar(){
     return(
-        <div className='flex items-center justify-between px-6 py-2'> 
+        <div className='flex items-center justify-between px-12 py-2'> 
             <img
             src={logo} 
             alt="Logo" 
