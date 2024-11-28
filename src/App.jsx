@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "./navBar";
-import SearchInput from "./SearchInput";
+import NavBar from "./components/navBar";
+import SearchInput from "./components/SearchInput";
 function App() {
   return (
     <BrowserRouter>
