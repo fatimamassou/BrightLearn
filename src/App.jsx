@@ -6,8 +6,8 @@ function App() {
   return (
     <BrowserRouter>
         <NavBar />
-        <div className="flex justify-center aitems-center">
-          <SearchInput width={400} height={40} />
+        <div className="w-full flex justify-center aitems-center">
+          <SearchInput width={1/2} height={80} />
         </div>
     </BrowserRouter>
   );

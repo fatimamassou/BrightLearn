@@ -1,5 +1,5 @@
 export default function SearchInput({width ,height ,onChange}) {
-    const style = `w-[${width}px] h-[${height}px] px-6 text-lg border-2 border-primary rounded-lg`;
+    const style = `w-[600px] h-12 focus:outline-secondary-100 px-6 text-lg border-2 border-primary rounded-lg text-primary`;
 
     return(
         <div className="">
