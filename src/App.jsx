@@ -1,15 +1,11 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import NavBar from "./components/navBar";
-import SearchInput from "./components/SearchInput";
+import Home from './pages/home';
+import './styles/App.css';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-        <NavBar />
-        <div className="">
-          <SearchInput width='w-2/6' height='h-12' />
-          </div>
+      <Home /> 
     </BrowserRouter>
   );
 }

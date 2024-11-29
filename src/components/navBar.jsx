@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom";
 import logo from "../pectures/logo.png";
 import Button from "./buttons";
 import NavBarLinks from "./NavBarLinks";
 export default function NavBar(){
     return(
         <div className='flex items-center justify-between px-12 py-2'> 
-            <img
-            src={logo} 
-            alt="Logo" 
-            className="w-[250px]"
-            />
+            <Link to="/home">
+                <img
+                    src={logo} 
+                    alt="Logo" 
+                    className="w-[250px] cursor-pointer"
+                />
+            </Link>
             <div className="flex space-x-14">
                 <NavBarLinks text="About" to="about" />
                 <NavBarLinks text="Tutors" to="totors"/>
