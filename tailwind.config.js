@@ -15,7 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         homePage: "url('/src/pectures/backgroundHome.jpeg')",
-      }
+      },
     }, // Extend the default theme if needed
   },
   plugins: [],
