@@ -1,8 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
 import Home from "./home";
+import Tetors from "./tetors";
 
 function LandingPage() {
+
     return (
-        <Home/>
+        <BrowserRouter>
+            <Home />
+            <Tetors />
+        </BrowserRouter>
     );
 }
 
