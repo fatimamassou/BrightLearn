@@ -20,8 +20,8 @@ export default function NavBar(){
             </div>
 
             <div className="flex space-x-2">
-                <Button text="Log In" type="secondary"/>
-                <Button text="Sign Up" type="primary"/>
+                <Button text="Log In" type="secondary" />
+                <Button text="Sign Up" type="primary" />
             </div>
         </div>
     );

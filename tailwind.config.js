@@ -13,8 +13,10 @@ module.exports = {
         secondary:{
           DEFAULT:'#EFD6FE',
           100:'#9955C1',
+          200: '#5E1885',
         }, 
-        bg_primary: '#EFD6FE'
+        bg_primary: '#EFD6FE',
+        grey: '#D9D9D9',
       },
       backgroundImage: {
         homePage: "url('/src/pectures/backgroundHome.jpeg')",

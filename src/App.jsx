@@ -1,12 +1,11 @@
-import Category from './components/Category';
-import Home from './pages/home';
+import LandingPage from './pages/LandingPage';
 import './styles/App.css';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <Home /> 
+      <LandingPage/> 
     </BrowserRouter>
   );
 }
