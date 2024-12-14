@@ -29,7 +29,7 @@ function Tetors() {
         
     } , 4);
     return(
-        <div className="px-12 w-screen h-screen bg-bg_secondary flex items-center">
+        <div className="px-14 w-screen h-screen bg-bg_secondary flex items-center">
             <div className="space-y-24">
                 <div className="">
                     <Category />
@@ -38,12 +38,12 @@ function Tetors() {
                     {cardInfo.map((card) => {return <Card card={card} />})}
                 </div>
                 <div className="text-center">
-                    <Link to="See All page" className="text-primary font-medium text-3xl space-x-2"> 
+                    <Link to="See All page" className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2"> 
                         <span>
                             See All
                         </span>
                         <span>
-                            <ArrowForwardIcon />    
+                            <ArrowForwardIcon fontSize='large' />    
                         </span> 
                      </Link> 
                 </div>

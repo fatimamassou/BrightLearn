@@ -9,6 +9,7 @@ module.exports = {
         primary:{
           DEFAULT: '#4F1271',
           100: '#783F8E' ,
+          200: '#AC3FE9' ,
         },
         secondary:{
           DEFAULT:'#EFD6FE',

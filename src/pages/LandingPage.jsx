@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import Home from "./home";
 import Tetors from "./tetors";
 
