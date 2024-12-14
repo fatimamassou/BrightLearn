@@ -1,36 +1,13 @@
-import { useFakeData } from "@faissaloux/fake-data";
 import Button from "./buttons";
 
-function Card() {
-    const cardInfo = useFakeData({
-        avatar : 'image.avatar' ,
-        firsName : 'person.firstName' ,
-        lastName : 'person.lastName' ,
-        subject : 'person.jobArea' ,
-        hour :{
-            identifier: 'number.int',
-            args: {min: 1, max: 12, multipleOf: 1}
-        }  ,
-        minute :{
-            identifier: 'number.int',
-            args: {min: 0, max: 59, multipleOf: 1}
-        }  , 
-        date :{
-            identifier: 'date.past',
-            args: {separator: '/'}
-        }  , 
-        Price :{
-            identifier: 'number.int',
-            args: {min: 5, max: 20, multipleOf: 1}
-        }  ,       
-        
-    } , 1);
-
+function Card({card}) {
+    const cardInfo = card ;
+    console.log(cardInfo)
     return(
         <div className="px-6 py-6 h-80">
-            <div className="w-80 bg-grey rounded-lg px-2 py-2 flex space-x-4">
+            <div className="w-80 bg-grey rounded-2xl px-2 py-2 flex space-x-4">
                 <div className="">
-                    <img src={cardInfo.avatar} alt="avatar" className="w-28 h-60 rounded-lg"/>
+                    <img src={cardInfo.avatar} alt="avatar" className="w-28 h-60 rounded-2xl"/>
                 </div>
                 <div className="flex items-center">
                     <div className="block space-y-4">

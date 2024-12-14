@@ -5,10 +5,10 @@ import Tetors from "./tetors";
 function LandingPage() {
 
     return (
-        <BrowserRouter>
-            <Home />
-            <Tetors />
-        </BrowserRouter>
+        <div>
+            <Home/>
+            <Tetors/>
+        </div>
     );
 }
 

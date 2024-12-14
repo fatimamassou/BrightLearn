@@ -16,6 +16,7 @@ module.exports = {
           200: '#5E1885',
         }, 
         bg_primary: '#EFD6FE',
+        bg_secondary: '#F7F7FE' ,
         grey: '#D9D9D9',
       },
       backgroundImage: {
