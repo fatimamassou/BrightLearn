@@ -29,12 +29,12 @@ function Tetors() {
         
     } , 4);
     return(
-        <div className="px-14 w-screen h-screen bg-bg_secondary flex items-center">
-            <div className="space-y-24">
+        <div className="px-10 w-screen h-screen bg-bg_secondary flex items-center">
+            <div className="space-y-24 w-full">
                 <div className="">
                     <Category />
                 </div>
-                <div className="flex">
+                <div className="flex justify-center items-center">
                     {cardInfo.map((card) => {return <Card card={card} />})}
                 </div>
                 <div className="text-center">

@@ -4,7 +4,7 @@ import Button from "./buttons";
 import NavBarLinks from "./NavBarLinks";
 export default function NavBar(){
     return(
-        <div className='flex items-center justify-between px-12 py-2'> 
+        <div className='flex items-center justify-between px-10 py-2'> 
             <Link to="/home">
                 <img
                     src={logo} 
