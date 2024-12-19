@@ -3,13 +3,14 @@ import Card from "../components/card";
 import Category from "../components/Category";
 import { useFakeData } from "@faissaloux/fake-data";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { subjects } from '../data' ;
 
 function Tetors() {
     const cardInfo = useFakeData({
         avatar : 'image.avatar' ,
         firsName : 'person.firstName' ,
         lastName : 'person.lastName' ,
-        subject : 'person.jobArea' ,
+        subject : subjects ,
         hour :{
             identifier: 'number.int',
             args: {min: 1, max: 12, multipleOf: 1}
