@@ -4,7 +4,7 @@ import Tetors from "./tetors";
 function LandingPage() {
 
     return (
-        <div>
+        <div className="overflow-hidden">
             <Home/>
             <Tetors/>
         </div>

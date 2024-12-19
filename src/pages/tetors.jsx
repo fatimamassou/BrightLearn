@@ -34,7 +34,7 @@ function Tetors() {
                 <div className="">
                     <Category />
                 </div>
-                <div className="flex ">
+                <div className="flex">
                     {cardInfo.map((card) => {return <Card card={card} />})}
                 </div>
                 <div className="text-center">
