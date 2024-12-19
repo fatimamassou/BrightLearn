@@ -10,7 +10,10 @@ function Tetors() {
         avatar : 'image.avatar' ,
         firsName : 'person.firstName' ,
         lastName : 'person.lastName' ,
-        subject : subjects ,
+        subject :{
+            identifier: 'array.element',
+            args: subjects ,
+        },
         hour :{
             identifier: 'number.int',
             args: {min: 1, max: 12, multipleOf: 1}
@@ -25,7 +28,7 @@ function Tetors() {
         }  , 
         Price :{
             identifier: 'number.int',
-            args: {min: 5, max: 20, multipleOf: 1}
+            args: {min: 2, max: 14, multipleOf: 1}
         }  ,       
         
     } , 4);
