@@ -7,13 +7,14 @@ import { subjects } from '../data' ;
 import { useState } from "react";
 
 function Tetors() {
+    const subjectHave = subjects.filter((element)=>{return element !== 'All'}) ;  
     const cards = useFakeData({
         avatar : 'image.avatar' ,
         firsName : 'person.firstName' ,
         lastName : 'person.lastName' ,
         subject :{
             identifier: 'array.element',
-            args: subjects ,
+            args: subjectHave ,
         },
         hour :{
             identifier: 'number.int',
