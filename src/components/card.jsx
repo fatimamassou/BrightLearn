@@ -11,7 +11,7 @@ function Card({card}) {
                 </div>
                 <div className="flex items-center">
                     <div className="block space-y-4">
-                        <div className="space-y-2">
+                        <div className="space-y-4">
                             <p className="text-xl font-bold text-primary">{cardInfo.lastName} {cardInfo.firsName}</p>
                             <p className="text-xl text-primary font-medium">{cardInfo.subject}</p>
                             <p className="flex text-primary">{cardInfo.hour} : {cardInfo.minute} PM {cardInfo.date}</p>

@@ -4,9 +4,10 @@ import Category from "../components/Category";
 import { useFakeData } from "@faissaloux/fake-data";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { subjects } from '../data' ;
+import { useState } from "react";
 
 function Tetors() {
-    const cardInfo = useFakeData({
+    const cards = useFakeData({
         avatar : 'image.avatar' ,
         firsName : 'person.firstName' ,
         lastName : 'person.lastName' ,
@@ -32,6 +33,13 @@ function Tetors() {
         }  ,       
         
     } , 4);
+    const [selectedSubject , setSelectedSubject] = useState('All') ;
+    const filteredData =
+    selectedSubject === "All"
+      ? cards
+      : cards.filter((item) => item.subject === selectedSubject);
+    
+
     return(
         <div className="px-10 w-screen h-screen bg-bg_secondary flex items-center">
             <div className="space-y-24 w-full">
@@ -39,7 +47,7 @@ function Tetors() {
                     <Category />
                 </div>
                 <div className="flex justify-center items-center">
-                    {cardInfo.map((card) => {return <Card card={card} />})}
+                    {cards.map((card) => {return <Card card={card} />})}
                 </div>
                 <div className="text-center">
                     <Link to="See All page" className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2"> 
