@@ -19,9 +19,15 @@ module.exports = {
         bg_primary: '#EFD6FE',
         bg_secondary: '#F7F7FE' ,
         grey: '#D9D9D9',
+        white: '#ffffff'
       },
       backgroundImage: {
         homePage: "url('/src/pectures/backgroundHome.jpeg')",
+      },
+      boxShadow: {
+        DEFAULT: '0px 0px 18px 1px rgb(93, 75, 100)',
+        100: '6px 0px 18px 1px rgb(93, 75, 100)',
+        button: '2px 2px 7px #258694',
       },
     }, // Extend the default theme if needed
   },
