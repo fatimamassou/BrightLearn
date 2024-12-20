@@ -25,8 +25,8 @@ module.exports = {
         homePage: "url('/src/pectures/backgroundHome.jpeg')",
       },
       boxShadow: {
-        DEFAULT: '0px 0px 18px 1px rgb(93, 75, 100)',
-        100: '6px 0px 18px 1px rgb(93, 75, 100)',
+        DEFAULT: '0px -2px 20px 2px rgb(158, 146, 163)',
+        100: '8px 8px 10px 2px rgb(158, 146, 163)',
         button: '2px 2px 7px #258694',
       },
     }, // Extend the default theme if needed
