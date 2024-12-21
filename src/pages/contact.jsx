@@ -11,7 +11,7 @@ import Tiktok from "../pictures/Purple aesthetic icon TikTok.jpeg";
 function Contact() {
     return(
         <div className="h-screen bg-bg_secondary flex items-center justify-center py-10 space-x-12">
-            <div className="max-w-[540px] p-6 flex-grow">
+            <div className="max-w-[600px] p-6 flex-grow">
                 <form action="submitedform" className="space-y-4">
                     <div>
                         <Lable>Full Name</Lable>
@@ -53,7 +53,7 @@ function Contact() {
                     <div className="flex space-x-6">
                         <img src={Phone} alt="Phone" className="w-16 rounded-lg"/>
                         <div className="space-y-1">
-                            <p className="text-lg font-medium">Call Us</p>
+                            <p className="text-lg font-medium text-secondary-200">Call Us</p>
                             <p>+212-645-678-890</p>
                         </div>
                     </div>
@@ -61,13 +61,13 @@ function Contact() {
                     <div className="flex space-x-6">
                         <img src={Gmail} alt="Gmail" className="w-16 rounded-lg"/>
                         <div className="space-y-1">
-                            <p className="text-lg font-medium">Email Us</p>
+                            <p className="text-lg font-medium text-secondary-200">Email Us</p>
                             <p>BrightLearn@gmail.com</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="block space-y-2 text-lg font-medium">
+                <div className="block space-y-2 text-lg font-medium text-secondary-200">
                     <h1>Follow Us!</h1>
                     <div className="flex space-x-2">
                         <img src={Insta} alt="Instagram" className="w-8 rounded-lg"/>
