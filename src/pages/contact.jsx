@@ -1,5 +1,12 @@
 import Input from "../components/inputs";
 import Lable from "../components/lable";
+import Phone from "../pictures/purplePhone.jpeg";
+import Gmail from "../pictures/purpleGmail.jpeg";
+import Youtube from "../pictures/youtube.jpeg";
+import Insta from "../pictures/App icon.jpeg";
+import Pinterest from "../pictures/Pinterest.jpeg";
+import Tiktok from "../pictures/Purple aesthetic icon TikTok.jpeg";
+
 
 function Contact() {
     return(
@@ -40,14 +47,34 @@ function Contact() {
                         Drop us a line and let's make something awesome together!
                     </p>
                 </div>
-                <div className="">
-                    <div className="">
-                        <img src="" alt="" />
-                    </div>
-                    <div className="">
 
+                <div className="flex">
+                    <div className="flex">
+                        <img src={Phone} alt="Phone" className="w-16 rounded-lg"/>
+                        <div className="">
+                            <p>Call Us</p>
+                            <p>+212-645-678-890</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <img src={Gmail} alt="Gmail" className="w-16 rounded-lg"/>
+                        <div className="">
+                            <p>Email US</p>
+                            <p>BrightLearn@gmail.com</p>
+                        </div>
                     </div>
                 </div>
+
+                <div className="block space-y-4">
+                    <h1>Follow Us !</h1>
+                    <div className="flex space-x-2">
+                        <img src={Insta} alt="Gmail" className="w-8 rounded-lg"/>
+                        <img src={Tiktok} alt="Tiktok" className="w-8 rounded-lg"/>
+                        <img src={Youtube} alt="Youtube" className="w-8 rounded-lg"/>
+                        <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg"/>
+                    </div>
+                </div>
+
             </div>
         </div>    
     );
