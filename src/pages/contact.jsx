@@ -41,28 +41,31 @@ function Contact() {
             </div>
             <div className="space-y-8 max-w-[540px]">
                 <h1 className="text-primary-200 text-4xl ">Contact Us</h1>
-                <div className="text-primary-100 space-y-2">
+                <div className="text-secondary-200 space-y-2">
                     <h1 className="text-5xl">Hit Us Up!</h1>
                     <p>Got a question, an idea, or just want to chat? We're all about good vibes and happy learning! 
                         Drop us a line and let's make something awesome together!
                     </p>
                 </div>
 
-                <div className="flex">
-                    <div className="flex">
+                <div className="flex text-secondary-200 justify-between">
+
+                    <div className="flex space-x-6">
                         <img src={Phone} alt="Phone" className="w-16 rounded-lg"/>
                         <div className="space-y-2">
-                            <p>Call Us</p>
+                            <p className="text-xl font-medium">Call Us</p>
                             <p>+212-645-678-890</p>
                         </div>
                     </div>
-                    <div className="flex">
+
+                    <div className="flex space-x-6">
                         <img src={Gmail} alt="Gmail" className="w-16 rounded-lg"/>
-                        <div className="">
-                            <p>Email US</p>
+                        <div className="space-y-2">
+                            <p className="text-xl font-medium">Email US</p>
                             <p>BrightLearn@gmail.com</p>
                         </div>
                     </div>
+                
                 </div>
 
                 <div className="block space-y-4">
