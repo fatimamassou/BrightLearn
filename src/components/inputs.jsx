@@ -1,5 +1,5 @@
 function Input({type, Placeholder, Id ,Name}) {
-    const classStyle = "w-full border-2 border-primary-200 rounded-xl outline-0 py-2 px-6 text-primary-100 font-normal";
+    const classStyle = "w-full border-2 border-primary-200 rounded-xl outline-0 py-2 px-4 text-primary-100 font-normal bg-transparent";
     return(            
             type === "tel" ?  <input type="tel" required
                                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
