@@ -32,7 +32,23 @@ function Contact() {
                     </button>
                 </form>
             </div>
-            
+            <div className="">
+                <h1 className="">Contact Us</h1>
+                <div className="">
+                    <h1>Hit Us Up!</h1>
+                    <p>Got a question, an idea, or just want to chat? We're all about good vibes and happy learning! 
+                        Drop us a line and let's make something awesome together!
+                    </p>
+                </div>
+                <div className="">
+                    <div className="">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="">
+
+                    </div>
+                </div>
+            </div>
         </div>    
     );
 }
