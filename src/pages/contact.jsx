@@ -10,7 +10,7 @@ import Tiktok from "../pictures/Purple aesthetic icon TikTok.jpeg";
 
 function Contact() {
     return(
-        <div className="h-screen bg-bg_secondary flex items-center justify-center">
+        <div className="h-screen bg-bg_secondary flex items-center justify-center space-x-12">
             <div className="max-w-[500px] p-6">
                 <form action="submitedform" className="space-y-4">
                     
@@ -39,10 +39,10 @@ function Contact() {
                     </button>
                 </form>
             </div>
-            <div className="">
-                <h1 className="">Contact Us</h1>
-                <div className="">
-                    <h1>Hit Us Up!</h1>
+            <div className="space-y-8 max-w-[540px]">
+                <h1 className="text-primary-200 text-4xl ">Contact Us</h1>
+                <div className="text-primary-100 space-y-2">
+                    <h1 className="text-5xl">Hit Us Up!</h1>
                     <p>Got a question, an idea, or just want to chat? We're all about good vibes and happy learning! 
                         Drop us a line and let's make something awesome together!
                     </p>
@@ -51,7 +51,7 @@ function Contact() {
                 <div className="flex">
                     <div className="flex">
                         <img src={Phone} alt="Phone" className="w-16 rounded-lg"/>
-                        <div className="">
+                        <div className="space-y-2">
                             <p>Call Us</p>
                             <p>+212-645-678-890</p>
                         </div>
