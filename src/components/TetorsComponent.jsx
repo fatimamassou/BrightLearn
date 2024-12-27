@@ -37,16 +37,14 @@ function TetorsComponent({ numberOfCards }) {
     selectedSubject === "All" ? cards : cards.filter((item) => item.subject === selectedSubject);
     
     return(
-        <div className="px-10 w-screen h-screen bg-bg_secondary flex items-center">
             <div className="space-y-24 w-full">
                 <div>
                     <Category onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject}/>
                 </div>
-                <div className="flex justify-center items-center">
-                    {filteredData.length > 0 ? filteredData.slice(0,numberOfCards).map((card) => {return <Card card={card} />}) : <div className="w-1/3 tracking-wide text-primary font-semibold text-2xl w-50 bg-secondary h-[50px] flex items-center justify-center rounded-xl">Not Found</div>}
+                <div className="grid grid-cols-[repeat(auto-fit,_minmax(380px,_2fr))] gap-2">
+                    {filteredData.length > 0 ? filteredData.map((card) => {return <Card card={card} />}) : <div className="w-1/3 tracking-wide text-primary font-semibold text-2xl w-50 bg-secondary h-[50px] flex items-center justify-center rounded-xl">Not Found</div>}
                 </div>
             </div>
-        </div>
     );
 }
 

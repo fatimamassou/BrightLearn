@@ -13,9 +13,9 @@ export default function NavBar({bgColor='bg-transparent'}){
                 />
             </Link>
             <div className="flex space-x-14">
-                <NavBarLinks text="About" to="about" />
-                <NavBarLinks text="Tutors" to="totors"/>
                 <NavBarLinks text="Home" to="home"/>
+                <NavBarLinks text="Tutors" to="totors"/>
+                <NavBarLinks text="About" to="about" />
                 <NavBarLinks text="Contact" to="contact"/>
             </div>
 
