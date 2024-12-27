@@ -11,10 +11,18 @@ function Footer() {
                 <p className="text-center">Have any questions? Need help? Contact Us anytime!</p>
                 <p className="text-center">@ 2024 BrightLearn. All rights reserved.</p>
                 <div className="flex items-center justify-center space-x-2 ">
-                    <img src={Insta} alt="Instagram" className="w-8 rounded-lg"/>
-                    <img src={Tiktok} alt="TikTok" className="w-8 rounded-lg"/>
-                    <img src={Youtube} alt="YouTube" className="w-8 rounded-lg"/>
-                    <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg"/>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Insta} alt="Instagram" className="w-8 rounded-lg" />
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Tiktok} alt="TikTok" className="w-8 rounded-lg" />
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Youtube} alt="YouTube" className="w-8 rounded-lg" />
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg" />
+                    </a>
                 </div>
             </div>
         </div>
