@@ -6,7 +6,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { subjects } from '../data' ;
 import { useState } from "react";
 
-function Tetors({ showSeeAll=true }) {
+function Tetors() {
     const subjectHave = subjects.filter((element)=>{return element !== 'All'}) ;  
     const cards = useFakeData({
         avatar : 'image.avatar' ,
@@ -39,38 +39,26 @@ function Tetors({ showSeeAll=true }) {
     selectedSubject === "All" ? cards : cards.filter((item) => item.subject === selectedSubject);
     
     return(
-    <div className="px-10 w-full min-h-screen bg-bg_secondary flex flex-col">
-        {/* Category Dropdown */}
-        <div className="mt-12 mb-12">
-            <Category onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject} />
-        </div>
-
-        {/* Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {filteredData.length > 0 ? (
-                filteredData.slice(0, 12).map((card) => (
-                    <Card key={card.id} card={card} /> // Each card
-            ))
-            ) : (
-            <div className="col-span-full text-center w-full tracking-wide text-primary font-semibold text-2xl bg-secondary h-[50px] flex items-center justify-center rounded-xl">
-                Not Found
+        <div className="px-10 w-screen h-screen bg-bg_secondary flex items-center">
+            <div className="space-y-24 w-full">
+                <div className="">
+                    <Category onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject}/>
+                </div>
+                <div className="flex justify-center items-center">
+                    {filteredData.length > 0 ? filteredData.slice(0, 4).map((card) => {return <Card card={card} />}) : <div className="w-1/3 tracking-wide text-primary font-semibold text-2xl w-50 bg-secondary h-[50px] flex items-center justify-center rounded-xl">Not Found</div>}
+                </div>
+                <div className="text-center">
+                    <Link to="See All page" className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2"> 
+                        <span>
+                            See All
+                        </span>
+                        <span>
+                            <ArrowForwardIcon fontSize='large'/>    
+                        </span> 
+                     </Link> 
+                </div>
             </div>
-            )}
         </div>
-
-        {/* "See All" Button */}
-        {showSeeAll && (
-            <div className="mt-12">
-            <Link
-                to="/see-all"
-                className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2 hover:text-primary-300"
-            >
-                <span>See All</span>
-                <ArrowForwardIcon fontSize="large" />
-            </Link>
-            </div>
-        )}
-    </div>
     );
 }
 

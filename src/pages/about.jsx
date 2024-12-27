@@ -9,10 +9,10 @@ function About () {
                 <div className="max-w-[600px]">
                     <div className="flex">
                         <img src={about2} alt="img" className="rounded-l-3xl rounded-tr-3xl shadow w-1/2"/>
-                        <img src={about4} alt="img" className="border-4 border-white rounded-r-3xl rounded-tl-3xl w-1/2"/>
+                        <img src={about3} alt="img" className="border-4 border-white rounded-r-3xl rounded-tl-3xl w-1/2"/>
                     </div>
                     <div className="flex">
-                        <img src={about3} alt="img" className="border-4 border-white rounded-l-3xl rounded-br-3xl w-1/2"/>
+                        <img src={about4} alt="img" className="border-4 border-white rounded-l-3xl rounded-br-3xl w-1/2"/>
                         <img src={about2} alt="img" className="rounded-b-3xl rounded-tr-3xl shadow-100 w-1/2"/>
                     </div>
                 </div>

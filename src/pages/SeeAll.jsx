@@ -8,7 +8,7 @@ function SeeAll() {
                 <NavBar bgColor="bg-secondary"/>
             </div>
             <div className="bg-bg_secondary">
-                <Tetors showSeeAll={false} />
+                <Tetors/>
             </div>
 
         </div>
