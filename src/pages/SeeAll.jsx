@@ -1,14 +1,14 @@
 import NavBar from "../components/navBar";
-import Tetors from "./tetors";
+import Tetors from "../components/TetorsComponent";
 
 function SeeAll() {
     return(
         <div className=" bg-bg_secondary w-full h-screen">
-            <div className="mb-20">
+            <div className="">
                 <NavBar bgColor="bg-secondary"/>
             </div>
-            <div className="bg-bg_secondary">
-                <Tetors/>
+            <div className="overflow-hidden">
+                <Tetors numberOfCards={4}/>
             </div>
 
         </div>
