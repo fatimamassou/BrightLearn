@@ -15,7 +15,7 @@ export default function NavBar(){
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
             if (rect.top <= 100 && rect.bottom >= 100) {
-                if (section.id === "tutors" || section.id === "contact") {
+                if (section.id === "tutors" || section.id === "contact" || section.id === "seeAll") {
                      currentBg = "bg-secondary";
                 }
             }

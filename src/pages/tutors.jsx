@@ -49,7 +49,7 @@ function Tutors() {
                         {filteredData.length > 0 ? filteredData.slice(0, 4).map((card) => {return <Card card={card} />}) : <div className="w-1/3 tracking-wide text-primary font-semibold text-2xl w-50 bg-secondary h-[50px] flex items-center justify-center rounded-xl">Not Found</div>}
                     </div>
                     <div className="text-center">
-                        <Link to="See All page" className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2"> 
+                        <Link to="seeAll" className="text-primary-200 font-medium text-3xl space-x-2 border-b-4 border-primary-200 py-2"> 
                             <span>
                                 See All
                             </span>
