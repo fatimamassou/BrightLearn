@@ -4,7 +4,7 @@ import { useFakeData } from "@faissaloux/fake-data";
 import { subjects } from '../data' ;
 import { useState } from "react";
 
-function TetorsComponent({ numberOfCards }) {
+function TetorsComponent() {
     const subjectHave = subjects.filter((element)=>{return element !== 'All'}) ;  
     const cards = useFakeData({
         avatar : 'image.avatar' ,

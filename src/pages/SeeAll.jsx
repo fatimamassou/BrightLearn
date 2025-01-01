@@ -9,7 +9,7 @@ function SeeAll() {
                 <NavBar bgColor="bg-secondary"/>
             </div>
             <div className="pt-36 p-10">
-                <Tetors numberOfCards={4}/>
+                <Tetors/>
             </div>
             <Footer/>
         </div>

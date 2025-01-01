@@ -5,7 +5,8 @@ import about4 from "../pictures/about4.jpeg" ;
 
 function About () {
     return( 
-        <div className="flex space-x-20 justify-center items-center w-full h-screen bg-secondary ">
+        <section id="about"> 
+            <div className="flex space-x-20 justify-center items-center w-full h-screen bg-secondary ">
                 <div className="max-w-[600px]">
                     <div className="flex">
                         <img src={about2} alt="img" className="rounded-l-3xl rounded-tr-3xl shadow w-1/2"/>
@@ -27,7 +28,8 @@ function About () {
                         <Button text="Let's Gooo!" to='sinup page' type="primary"/>                        
                     </div>
                 </div>
-        </div>
+            </div>
+        </section>
     );
 }
 

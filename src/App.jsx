@@ -1,12 +1,15 @@
 import LandingPage from './pages/LandingPage';
 import SeeAll from './pages/SeeAll';
 import './styles/App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <LandingPage /> 
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/see-all" element={<SeeAll />} />
+      </Routes>
     </BrowserRouter>
   );
 }
