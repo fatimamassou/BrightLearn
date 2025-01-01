@@ -31,7 +31,7 @@ function TetorsComponent({ numberOfCards }) {
             args: {min: 2, max: 20, multipleOf: 1}
         }  ,       
         
-    } , 20);
+    } , 40);
     const [selectedSubject , setSelectedSubject] = useState('All') ;
     const filteredData =
     selectedSubject === "All" ? cards : cards.filter((item) => item.subject === selectedSubject);

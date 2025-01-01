@@ -1,5 +1,6 @@
 import NavBar from "../components/navBar";
 import Tetors from "../components/TetorsComponent";
+import Footer from "./footer";
 
 function SeeAll() {
     return(
@@ -10,7 +11,7 @@ function SeeAll() {
             <div className="pt-36 p-10">
                 <Tetors numberOfCards={4}/>
             </div>
-
+            <Footer/>
         </div>
 
     );
