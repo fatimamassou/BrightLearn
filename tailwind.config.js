@@ -29,6 +29,9 @@ module.exports = {
         100: '8px 8px 10px 2px rgb(158, 146, 163)',
         button: '2px 2px 7px #258694',
       },
+      borderWidth: {
+        '3': "3px" ,
+      },
     }, // Extend the default theme if needed
   },
   plugins: [],
