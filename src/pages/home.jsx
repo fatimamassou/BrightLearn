@@ -7,7 +7,7 @@ function Home() {
         <section id="home">
             <div className="home bg-cover bg-center w-screen h-screen" >
                 <NavBar />
-                <div className="h-screen flex flex-col space-y-20 pt-40">
+                <div className="h-screen flex flex-col space-y-20 flex aitems-center justify-center">
                     <div className="w-full flex aitems-center justify-center">
                         <h1 className="w-1/3 tracking-wide text-center text-primary-100 font-normal text-5xl ">Where Learning Meets Passion</h1>
                     </div>
