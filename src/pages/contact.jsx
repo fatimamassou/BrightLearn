@@ -70,10 +70,18 @@ function Contact() {
                 <div className="block space-y-2 text-lg font-medium text-secondary-200">
                     <h1>Follow Us!</h1>
                     <div className="flex space-x-2">
-                        <img src={Insta} alt="Instagram" className="w-8 rounded-lg"/>
-                        <img src={Tiktok} alt="TikTok" className="w-8 rounded-lg"/>
-                        <img src={Youtube} alt="YouTube" className="w-8 rounded-lg"/>
-                        <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg"/>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Insta} alt="Instagram" className="w-8 rounded-lg" />
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank"  rel="noopener noreferrer">
+                            <img src={Tiktok} alt="TikTok" className="w-8 rounded-lg" />
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Youtube} alt="YouTube" className="w-8 rounded-lg" />
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg" />
+                        </a>
                     </div>
                 </div>
             </div>
