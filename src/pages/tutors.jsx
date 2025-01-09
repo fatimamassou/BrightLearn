@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import Card from "../components/card";
-import Category from "../components/Category";
 import { useFakeData } from "@faissaloux/fake-data";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from "react-router-dom";
 import { subjects } from '../data' ;
 import { useState } from "react";
+import Card from "../components/card"; 
+import Category from "../components/Category";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Tutors() {
     const subjectHave = subjects.filter((element)=>{return element !== 'All'}) ;  
