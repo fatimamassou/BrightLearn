@@ -4,3 +4,6 @@
 .footer {
     background: url('../pictures/bakgroundFooter.jpeg') center / cover no-repeat;
 }
+body {
+    user-select: none;
+}

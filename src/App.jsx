@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/seeAll" element={<SeeAll />} />seeAll
+        <Route path="/seeAll" element={<SeeAll />} />
       </Routes>
     </BrowserRouter>
   );

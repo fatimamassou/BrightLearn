@@ -1,8 +1,14 @@
 import NavBar from "../components/navBar";
 import Tetors from "../components/TetorsComponent";
 import Footer from "./footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function SeeAll() {
+    const location = useLocation();
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[location])
     return(
         <section id="seeAll" >
             <div className="bg-bg_secondary w-full">
