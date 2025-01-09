@@ -11,7 +11,6 @@ export default function NavBar({route}){
     const styleAfter = `fixed top-0 left-0 w-full z-50 flex items-center justify-between px-20 py-2 ${bgColor}`;
     const [style, setStyle] = useState(styleBefore);
 
-
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll("section");
@@ -43,7 +42,7 @@ export default function NavBar({route}){
             className={style}
         > 
             <Link
-                to="home"
+                to="/"
                 smooth={true}
                 duration={500}
             >
