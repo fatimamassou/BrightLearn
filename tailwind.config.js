@@ -32,6 +32,9 @@ module.exports = {
       borderWidth: {
         '3': "3px" ,
       },
+      borderRadius: {
+        'custom': '20%', // Define your custom border radius
+      },
     }, // Extend the default theme if needed
   },
   plugins: [],
