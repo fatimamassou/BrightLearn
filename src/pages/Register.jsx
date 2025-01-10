@@ -4,7 +4,7 @@ import teacherImage from '../pictures/Kim-Namjoooon.jpeg' ;
 import { Link } from 'react-router-dom';
 
 function Register() {
-    const imgStyle = 'lg:w-96 object-cover rounded-custom cursor-pointer transform transition duration-400 hover:scale-105 shadow-200';
+    const imgStyle = 'lg:w-96 object-cover rounded-custom cursor-pointer transform transition duration-500 hover:scale-105 shadow-200';
     const divImgStyle = 'w-fit text-center lg:space-y-8 md:space-y-14';
     const h2style = 'text-3xl text-primary text-shadow-lg';
     return(
@@ -19,11 +19,15 @@ function Register() {
                 <h1 className="tracking-wide text-center text-primary-100 font-normal text-3xl">Time to choose your path! Are you here to learn or to teach?</h1>
                 <div className="grid gap-8 md:grid-cols-2 w-full">
                     <div className={divImgStyle}>
-                        <img src={studentImage} alt="imgStudent" className={`${imgStyle} lg:h-72 md:h-[200px] md:w-[240px] `} />
+                        <Link to='singupstudent'>
+                            <img src={studentImage} alt="imgStudent" className={`${imgStyle} lg:h-72 md:h-[200px] md:w-[240px] `} />
+                        </Link>
                         <h2 className={h2style}>Student</h2>
                     </div>
                     <div className={divImgStyle}>
-                        <img src={teacherImage} alt="imgTeacher" className={`${imgStyle} lg:h-[288px] md:h-[210px] md:w-[250px]`} />
+                        <Link to='singupteacher'>
+                            <img src={teacherImage} alt="imgTeacher" className={`${imgStyle} lg:h-[288px] md:h-[210px] md:w-[250px]`} />
+                        </Link>
                         <h2 className={h2style}>Teacher</h2>
                     </div>
                 </div> 
