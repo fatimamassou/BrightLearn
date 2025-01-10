@@ -59,10 +59,10 @@ export default function NavBar({route}){
                 <NavBarLinks text="Contact" to="contact"/>
             </div> : null
             }
-
+ 
             <div className="flex space-x-2">
-                <Button text="Log In" type="secondary" to="login" />
-                <Button text="Sign Up" type="primary" to="register" />
+                <Button text="Log In" type="secondary" to="/login" />
+                <Button text="Sign Up" type="primary" to="/register" />
             </div>
         </div>
     );

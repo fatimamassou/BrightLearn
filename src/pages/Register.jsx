@@ -19,13 +19,13 @@ function Register() {
                 <h1 className="tracking-wide text-center text-primary-100 font-normal text-3xl">Time to choose your path! Are you here to learn or to teach?</h1>
                 <div className="grid gap-8 md:grid-cols-2 w-full">
                     <div className={divImgStyle}>
-                        <Link to='singupstudent'>
+                        <Link to='/singupstudent'>
                             <img src={studentImage} alt="imgStudent" className={`${imgStyle} lg:h-72 md:h-[200px] md:w-[240px] `} />
                         </Link>
                         <h2 className={h2style}>Student</h2>
                     </div>
                     <div className={divImgStyle}>
-                        <Link to='singupteacher'>
+                        <Link to='/singupteacher'>
                             <img src={teacherImage} alt="imgTeacher" className={`${imgStyle} lg:h-[288px] md:h-[210px] md:w-[250px]`} />
                         </Link>
                         <h2 className={h2style}>Teacher</h2>
