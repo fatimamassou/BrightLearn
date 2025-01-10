@@ -27,13 +27,14 @@ module.exports = {
       boxShadow: {
         DEFAULT: '0px -2px 20px 2px rgb(158, 146, 163)',
         100: '8px 8px 10px 2px rgb(158, 146, 163)',
+        200: '0px 10px 10px rgb(137, 87, 160)',
         button: '2px 2px 7px #258694',
       },
       borderWidth: {
         '3': "3px" ,
       },
       borderRadius: {
-        'custom': '20%', // Define your custom border radius
+        'custom': '18%', // Define your custom border radius
       },
     }, // Extend the default theme if needed
   },
