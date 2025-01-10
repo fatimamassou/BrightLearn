@@ -27,7 +27,7 @@ module.exports = {
       boxShadow: {
         DEFAULT: '0px -2px 20px 2px rgb(158, 146, 163)',
         100: '8px 8px 10px 2px rgb(158, 146, 163)',
-        200: '0px 10px 10px rgb(137, 87, 160)',
+        200: '4px 6px 14px rgb(78, 52, 90)',
         button: '2px 2px 7px #258694',
       },
       borderWidth: {
@@ -36,7 +36,13 @@ module.exports = {
       borderRadius: {
         'custom': '18%', // Define your custom border radius
       },
+      textShadow: {
+        sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+        lg: '2px 6px 4px rgb(137, 87, 160)',
+      },
     }, // Extend the default theme if needed
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 };
