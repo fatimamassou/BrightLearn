@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
+import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
 import { Link } from 'react-router-dom';
 function SingUpTeacher() {
+    const [selectedSubject , setSelectedSubject] = useState('') ;
+    
     return(
         <div className="w-full lg:h-screen flex bg-secondary">
             <div className="lg:w-1/2 flex items-center justify-center">
@@ -24,7 +28,12 @@ function SingUpTeacher() {
                                 <Lable>Your Phone</Lable>
                                 <Input type="tel" Placeholder="Phone number" Id="" Name="" />
                             </div>
-                            
+
+                            <div>
+                                <Lable>Your Spiciality</Lable>
+                                <Select onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject} />
+                            </div>
+
                             <div>
                                 <Lable>Password</Lable>
                                 <Input type="password" Placeholder="Password" Id="" Name="" />
