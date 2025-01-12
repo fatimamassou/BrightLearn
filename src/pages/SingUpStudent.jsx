@@ -29,13 +29,13 @@ function SingUpStudent() {
                             </div>
                             
                             <div>
-                                <Lable>Full Name</Lable>
-                                <Input type="password" Placeholder="Full Name" Id="" Name="" />
+                                <Lable>Password</Lable>
+                                <Input type="password" Placeholder="Password" Id="" Name="" />
                             </div>
                             
                             <div>
-                                <Lable>Full Name</Lable>
-                                <Input type="password" Placeholder="Full Name" Id="" Name="" />
+                                <Lable>Confirme Password</Lable>
+                                <Input type="password" Placeholder="Confirme Password" Id="" Name="" />
                             </div>
                         </div>
                         <div className="space-y-6">
