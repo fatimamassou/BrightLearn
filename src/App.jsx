@@ -1,4 +1,5 @@
 import LandingPage from './pages/LandingPage';
+import LogIn from './pages/Login';
 import Register from './pages/Register';
 import SeeAll from './pages/SeeAll';
 import SingUpStudent from './pages/SingUpStudent';
@@ -15,6 +16,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/singupstudent" element={<SingUpStudent />} />
         <Route path="/singupteacher" element={<SingUpTeacher />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   );
