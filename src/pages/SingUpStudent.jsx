@@ -40,13 +40,13 @@ function SingUpStudent() {
                         </div>
                         <div className="space-y-6">
                             <Link 
-                            to='/singin'
+                            to='/login'
                             >
                                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
                             </Link>
                             <div className="h-[1px] w-full bg-primary-200"></div>
                             <div className="text-center text-primary">Already in the club? Jump to 
-                                <Link to='/singin'>
+                                <Link to='/login'>
                                     <span className='text-primary-200 font-semibold underline underline-offset-2 '> Log In!</span> 
                                 </Link>
                                 </div>
