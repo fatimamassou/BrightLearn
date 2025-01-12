@@ -10,10 +10,10 @@ function SingUpTeacher() {
     return(
         <div className="w-full lg:h-screen flex bg-secondary">
             <div className="lg:w-1/2 flex items-center justify-center">
-                <div className="w-2/3 space-y-6">
+                <div className="w-2/3 space-y-4">
                     <h1 className="text-4xl text-primary-100 text-center">Sign Up</h1>
-                    <form action="submitedform" className="space-y-12">
-                      <div className="space-y-4">
+                    <form action="submitedform" className="space-y-4">
+                      <div className="space-y-2">
                             <div>
                                 <Lable>Full Name</Lable>
                                 <Input type="text" Placeholder="Full Name" Id="" Name="" />
@@ -34,6 +34,10 @@ function SingUpTeacher() {
                                 <Select onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject} />
                             </div>
 
+                            <div>
+                                <Lable>Description</Lable>
+                                <Input type="text" Placeholder="Your profile ..." Id="" Name="" />
+                            </div>
                             <div>
                                 <Lable>Password</Lable>
                                 <Input type="password" Placeholder="Password" Id="" Name="" />
