@@ -24,8 +24,8 @@ function About () {
                         We believe every student deserves the opportunity to succeed, 
                         and our passionate tutors are here to guide you every step of the way.
                     </p>
-                    <div className="">
-                        <Button text="Let's Gooo!" to='sinup page' type="primary"/>                        
+                    <div>
+                        <Button text="Let's Gooo!" to='/register' type="primary"/>                    
                     </div>
                 </div>
             </div>
