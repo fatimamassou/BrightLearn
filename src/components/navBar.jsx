@@ -50,7 +50,7 @@ export default function NavBar({route}){
                     className={`${logoWidth} cursor-pointer`}
                 />
             </Link>
-            {route === 'home' ?<div className="flex space-x-14">
+            {route === 'home' ? <div className="flex space-x-14">
                 <NavBarLinks text="Home" to="home"/>
                 <NavBarLinks text="Tutors" to="tutors"/>
                 <NavBarLinks text="About" to="about" />

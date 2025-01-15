@@ -17,8 +17,8 @@ function Card({card}) {
                             <p className="flex text-primary">{cardInfo.hour} : {cardInfo.minute} PM {cardInfo.date}</p>
                             <p className="text-xl font-bold text-primary">{cardInfo.Price} $ <span className="text-sm font-normal">/1h</span></p>
                         </div>
-                        <div className="">
-                            <Button text="See more" to="See more page" type="primary" px="px-4" py="py-0.5"/>
+                        <div>
+                           <Button text="See more" to="/seemore" type="primary" px="px-4" py="py-0.5"/>
                         </div>
                     </div>
                 </div>

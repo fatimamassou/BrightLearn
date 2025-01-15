@@ -2,6 +2,7 @@ import LandingPage from './pages/LandingPage';
 import LogIn from './pages/Login';
 import Register from './pages/Register';
 import SeeAll from './pages/SeeAll';
+import SeeMore from './pages/SeeMore';
 import SingUpStudent from './pages/SingUpStudent';
 import SingUpTeacher from './pages/SingUpTeacher';
 import './styles/App.css';
@@ -17,6 +18,7 @@ function App() {
         <Route path="/singupstudent" element={<SingUpStudent />} />
         <Route path="/singupteacher" element={<SingUpTeacher />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/seemore" element={<SeeMore />} />
       </Routes>
     </BrowserRouter>
   );
