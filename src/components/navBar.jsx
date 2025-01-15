@@ -1,8 +1,8 @@
-import { Link } from "react-scroll";
 import logo from "../pictures/logo.png";
 import Button from "./buttons";
 import NavBarLinks from "./NavBarLinks";
 import{ useEffect, useState  }from 'react';
+import { Link } from "react-router-dom";
 
 export default function NavBar({route}){
     const [bgColor, setBgColor] = useState("bg-transparent");
@@ -43,8 +43,6 @@ export default function NavBar({route}){
         > 
             <Link
                 to="/"
-                smooth={true}
-                duration={500}
             >
                 <img
                     src={logo} 
