@@ -5,7 +5,7 @@ import{ useEffect, useState  }from 'react';
 import { Link } from "react-router-dom";
 
 export default function NavBar({route}){
-    const [bgColor, setBgColor] = useState("bg-transparent");
+    const [bgColor, setBgColor] = useState("bg-secondary");
     const [logoWidth, setLogoWidth] = useState('w-[250px]');
     const styleBefore = `fixed top-0 left-0 w-full z-50 flex items-center justify-between px-10 py-2 ${bgColor}`;
     const styleAfter = `fixed top-0 left-0 w-full z-50 flex items-center justify-between px-20 py-2 ${bgColor}`;
@@ -62,6 +62,6 @@ export default function NavBar({route}){
                 <Button text="Log In" type="secondary" to="/login" />
                 <Button text="Sign Up" type="primary" to="/register" />
             </div>
-        </div>
+        </div> 
     );
 };
