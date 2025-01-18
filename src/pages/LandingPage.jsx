@@ -20,8 +20,9 @@ function LandingPage() {
             <div id="contact">
                 <Contact />
             </div>
-            <Footer />
-            
+            <div className="absolute inset-x-0 bottom-0">
+                <Footer/>
+            </div>
         </div>
     );
 }
