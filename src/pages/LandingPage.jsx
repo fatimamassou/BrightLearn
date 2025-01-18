@@ -7,8 +7,8 @@ import Tutors from "./tutors";
 function LandingPage() {
 
     return (
-        <div className="overflow-hidden">
-            <div id="home">
+        <div className="relative overflow-hidden">
+            <div id="home absolute inset-x-0 top-0">
                 <Home />
             </div>
             <div id="tutors">
@@ -20,9 +20,7 @@ function LandingPage() {
             <div id="contact">
                 <Contact />
             </div>
-            <div className="absolute inset-x-0 bottom-0">
                 <Footer/>
-            </div>
         </div>
     );
 }
