@@ -12,22 +12,13 @@ function SeeMore() {
             identifier: 'array.element',
             args: subjects ,
         },
-        hour :{
-            identifier: 'number.int',
-            args: {min: 1, max: 12, multipleOf: 1}
-        }  ,
-        minute :{
-            identifier: 'number.int',
-            args: {min: 0, max: 59, multipleOf: 1}
-        }  , 
-        date :{
-            identifier: 'date.past',
-            args: {separator: '/'}
-        }  , 
-        Price :{
-            identifier: 'number.int',
-            args: {min: 2, max: 20, multipleOf: 1}
-        }  ,       
+    
+        phone : "hone.number",       
+        email :{
+            identifier: 'internet.email',
+            args:{provider: "@gmail.com"} ,
+        },
+        description : "Hey there! I'm Kim Namjoon, your Math guru with 10 years of experience.Let's make math less about numbers and more about discovering how awesome problem-solving can be!"
         
     } , 1);
     return(
