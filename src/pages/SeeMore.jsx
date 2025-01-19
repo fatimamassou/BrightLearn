@@ -1,4 +1,6 @@
 import { useFakeData } from "@faissaloux/fake-data";
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+
 import InfoCard from "../components/InfoCard";
 import Layout from "../layouts/Layout";
 import { subjects } from '../data' ;
@@ -24,6 +26,12 @@ function SeeMore() {
     return(
         <Layout>
             <div className="w-full flex justify-center">
+            <Link to='/' >
+                    <KeyboardDoubleArrowLeftIcon 
+                        fontSize='large'
+                        className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 duration-800 text-primary-100 absolute lg:top-16 lg:left-40 md:top-10 md:left-8'
+                    />
+                </Link>
                 <div className="w-2/3">
                     <InfoCard card={cards}/>
                 </div>
