@@ -3,8 +3,7 @@ import Button from "./buttons";
 function InfoCard({card}) {
 
     return(
-        <div className="px-6 py-6">
-            <div className="w-full bg-grey rounded-2xl p-4 flex space-x-8">
+            <div className="w-full bg-grey rounded-2xl p-4 flex space-x-8 shadow-100">
                 <div>
                     <img src={card.avatar} alt="avatar" className="w-[300px] h-[400px] rounded-2xl"/>
                 </div>
@@ -43,7 +42,6 @@ function InfoCard({card}) {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

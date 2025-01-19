@@ -23,8 +23,10 @@ function SeeMore() {
     } , 1);
     return(
         <Layout>
-            <div className="w-2/3">
-                <InfoCard card={cards}/>
+            <div className="w-full flex justify-center">
+                <div className="w-2/3">
+                    <InfoCard card={cards}/>
+                </div>
             </div>
         </Layout>
     );
