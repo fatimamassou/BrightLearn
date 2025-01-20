@@ -13,7 +13,7 @@ function InfoCard({card}) {
                             <tr className="h-12">
                                 <td className="w-32 text-xl font-bold">Full Name</td>
                                 <td className="w-10 text-xl font-bold">:</td>
-                                <td className="h-10">{card.firsName} {card.lastName}</td>
+                                <td>{card.firsName} {card.lastName}</td>
                             </tr>
                             <tr className="h-12">
                                 <td className="text-xl font-bold">Specialty</td>

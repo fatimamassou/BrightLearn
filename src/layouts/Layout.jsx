@@ -8,7 +8,7 @@ function Layout({children}) {
                 </div>
                 <div className="pt-36 p-10">
                     {children}
-                </div>
+                </div>                              
             </div>
     );
 }

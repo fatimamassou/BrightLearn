@@ -24,7 +24,7 @@ function SeeMore() {
     } , 1);
     return(
         <Layout>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center items-center">
             <Link to='/' >
                     <KeyboardDoubleArrowLeftIcon 
                         fontSize='large'
@@ -32,7 +32,7 @@ function SeeMore() {
                         duration-800 text-primary-100 absolute lg:top-40 lg:left-20 md:top-10 md:left-8'
                     />
             </Link>
-                <div className="w-2/3">
+                <div className="w-3/5 h-screen flex justify-center items-center">
                     <InfoCard card={cards}/>
                 </div>
             </div>
