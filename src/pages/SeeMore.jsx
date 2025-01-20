@@ -28,7 +28,8 @@ function SeeMore() {
             <Link to='/' >
                     <KeyboardDoubleArrowLeftIcon 
                         fontSize='large'
-                        className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 duration-800 text-primary-100 absolute lg:top-16 lg:left-40 md:top-10 md:left-8'
+                        className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 
+                        duration-800 text-primary-100 absolute lg:top-40 lg:left-20 md:top-10 md:left-8'
                     />
             </Link>
                 <div className="w-2/3">
