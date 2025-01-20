@@ -31,8 +31,8 @@ function InfoCard({card}) {
                                 <td>{card.email}</td>
                             </tr>
                             <tr className="h-12">
-                                <td className="text-xl font-bold">Description</td>
-                                <td className="text-xl font-bold">:</td>
+                                <td className="text-xl font-bold align-top">Description</td>
+                                <td className="text-xl font-bold align-top">:</td>
                                 <td className="w-[400px]">{card.description}</td>
                             </tr>
                         </table>
