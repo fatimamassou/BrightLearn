@@ -2,6 +2,7 @@ import Tetors from "../components/TetorsComponent";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "../layouts/Layout";
+import NavBar from "../components/navBar";
 
 function SeeAll() {
     const location = useLocation();
@@ -10,9 +11,15 @@ function SeeAll() {
     },[location])
     return(
         <section id="seeAll" >
-           <Layout>
-                <Tetors/>     
-           </Layout>
+           <div className="bg-bg_secondary w-full h-dsv">
+                <div className="fixed top-0 left-0 w-full z-50">
+                    <NavBar />
+                </div>
+                <div className="pt-36 p-10">
+                    <Tetors/>
+                </div>                              
+            </div>
+                     
         </section>
 
     );

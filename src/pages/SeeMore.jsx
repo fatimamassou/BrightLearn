@@ -24,15 +24,15 @@ function SeeMore() {
     } , 1);
     return(
         <Layout>
-            <div className="w-full flex justify-center items-center">
-            <Link to='/' >
+            <div className="w-full">
+                <Link to='/' >
                     <KeyboardDoubleArrowLeftIcon 
                         fontSize='large'
                         className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 
                         duration-800 text-primary-100 absolute lg:top-40 lg:left-20 md:top-10 md:left-8'
                     />
-            </Link>
-                <div className="w-3/5 h-screen flex justify-center items-center">
+                </Link>
+                <div className="w-full">
                     <InfoCard card={cards}/>
                 </div>
             </div>
