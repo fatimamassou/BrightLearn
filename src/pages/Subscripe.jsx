@@ -29,8 +29,8 @@ function SubscriptionPlans () {
           </div>
 
           {/* Yearly Plan */}
-          <div className="bg-grey h-[520px] shadow-md rounded-100  w-[360px]">
-            <div className="p-6 space-y-10">
+          <div className="bg-grey h-[520px] shadow-md rounded-100 w-[360px]">
+            <div className="p-6">
               <h2 className="text-2xl text-primary font-semibold mb-4">Yearly</h2>
               <p className="text-gray-600 mb-4">
                 Students and teachers seeking year-round support and resources.
