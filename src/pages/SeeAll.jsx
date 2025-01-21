@@ -17,8 +17,7 @@ function SeeAll() {
                 <div className="pt-36 p-10">
                     <Tetors/>
                 </div>                              
-            </div>
-                     
+            </div>  
         </section>
 
     );

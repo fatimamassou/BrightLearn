@@ -25,7 +25,7 @@ function SeeMore() {
     return(
         <Layout>
             <div className="w-full">
-                <Link to='/' >
+                <Link to='/seeall' >
                     <KeyboardDoubleArrowLeftIcon 
                         fontSize='large'
                         className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 
