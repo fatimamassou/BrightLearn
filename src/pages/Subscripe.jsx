@@ -46,7 +46,7 @@ function SubscriptionPlans () {
             </button>
           </div>
         </div>
-        <button className="mt-6 text-purple-600 hover:underline">← Back</button>
+        
       </div>
     </div>
   );

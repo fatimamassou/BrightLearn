@@ -5,6 +5,7 @@ import SeeAll from './pages/SeeAll';
 import SeeMore from './pages/SeeMore';
 import SingUpStudent from './pages/SingUpStudent';
 import SingUpTeacher from './pages/SingUpTeacher';
+import SubscriptionPlans from './pages/Subscripe';
 import './styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -18,7 +19,8 @@ function App() {
         <Route path="/singupstudent" element={<SingUpStudent />} />
         <Route path="/singupteacher" element={<SingUpTeacher />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/seemore" element={<SeeMore />} />
+        <Route path="/seemore" element={<SeeMore />} /> 
+        <Route path="/subscripe" element={<SubscriptionPlans />} />
       </Routes>
     </BrowserRouter>
   );

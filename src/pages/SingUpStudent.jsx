@@ -2,6 +2,7 @@ import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
 import { Link } from 'react-router-dom';
+
 function SingUpStudent() {
     return(
         <div className="w-full lg:h-screen flex bg-secondary">
@@ -40,7 +41,7 @@ function SingUpStudent() {
                         </div>
                         <div className="space-y-6">
                             <Link 
-                            to='/login'
+                            to='/subscripe'
                             >
                                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
                             </Link>
