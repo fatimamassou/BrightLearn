@@ -34,7 +34,8 @@ module.exports = {
         '3': "3px" ,
       },
       borderRadius: {
-        'custom': '18%', // Define your custom border radius
+        'custom': '18%', 
+        100: '8%', 
       },
       textShadow: {
         sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',
