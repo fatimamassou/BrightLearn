@@ -3,21 +3,21 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 function SubscriptionPlans () {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-bg_secondary p-6">
+    <div className="min-h-screen text-primary flex items-center justify-center bg-bg_secondary p-6">
       <div className="max-w-4xl w-full text-center space-y-24">
-        <h1 className="text-4xl font-semibold text-primary-100 mb-6">
+        <h1 className="text-4xl font-semibold-100 mb-6">
           Let's Level Up Your Learning!
         </h1>
         <div className="flex justify-center space-x-6">
           {/* Monthly Plan */}
-          <div className="bg-grey h-[500px] shadow-md rounded-100 p-6 w-[340px]">
-            <h2 className="text-2xl text-primary font-semibold mb-4">Monthly</h2>
-            <p className="text-gray-600 mb-4">
+          <div className="bg-grey h-[500px] shadow-md rounded-100 p-6 w-[360px]">
+            <h2 className="text-2xl font-semibold mb-4">Monthly</h2>
+            <p className="mb-4">
               Students and teachers seeking on-demand access to learning
               resources.
             </p>
-            <div className="text-4xl font-bold text-gray-800 mb-6">$9.99</div>
-            <ul className="text-left text-gray-600 mb-6 space-y-2">
+            <div className="text-4xl font-semibold mb-6"><span className="text-lg font-normal">$</span>9.99<span className="text-lg font-normal">/mo</span></div>
+            <ul className="text-left mb-6 space-y-2">
               <li><TaskAltIcon /> Access to recorded lessons</li>
               <li><TaskAltIcon /> 1-on-1 live coaching with tutors</li>
               <li><TaskAltIcon /> Access to discussion forums</li>
@@ -29,14 +29,14 @@ function SubscriptionPlans () {
           </div>
 
           {/* Yearly Plan */}
-          <div className="bg-grey h-[520px] shadow-md rounded-100 w-[360px]">
-            <div className="p-6">
-              <h2 className="text-2xl text-primary font-semibold mb-4">Yearly</h2>
-              <p className="text-gray-600 mb-4">
+          <div className="bg-grey h-[5O0px] shadow-md rounded-100 w-[360px] relative">
+            <div className="px-6 pt-6">
+              <h2 className="text-2xl font-semibold mb-4">Yearly</h2>
+              <p className="mb-4">
                 Students and teachers seeking year-round support and resources.
               </p>
-              <div className="text-4xl font-bold text-gray-800 mb-6">$109.99</div>
-              <ul className="text-left text-gray-600 mb-6 space-y-2">
+              <div className="text-4xl font-semibold mb-6"><span className="text-lg font-normal">$</span>109.99<span className="text-lg font-normal">/mo</span></div>
+              <ul className="text-left mb-6 space-y-2">
                 <li><TaskAltIcon /> Everything in Monthly, plus:</li>
                 <li><TaskAltIcon /> Personalized roadmaps</li>
                 <li><TaskAltIcon /> Priority booking with tutors</li>
@@ -44,7 +44,7 @@ function SubscriptionPlans () {
                 <li><TaskAltIcon /> Personalized communication with instructors</li>
               </ul>
             </div>
-            <button className="w-full bg-purple-600 text-white py-2 rounded-xl hover:bg-purple-700 transition">
+            <button className="w-full bg-primary-100 text-white py-4 rounded-xl hover:bg-purple-700 transition absolute bottom-0 left-0 ">
               Choose Yearly Plan
             </button>
           </div>
