@@ -10,7 +10,7 @@ function SubscriptionPlans () {
         </h1>
         <div className="flex justify-center space-x-6">
           {/* Monthly Plan */}
-          <div className="relative bg-grey h-[500px] shadow-md rounded-3xl p-6 w-[360px] space-y-6  ">
+          <div className="relative bg-grey h-[500px] shadow-md rounded-3xl p-6 w-[360px] space-y-6 hover:scale-105 ease-in-out duration-700 shadow-200">
           <div className="border-bg_secondary border-b-2 pb-8">
             <h2 className="text-2xl font-semibold text-primary">Monthly</h2>
               <p>
@@ -25,13 +25,13 @@ function SubscriptionPlans () {
               <li><TaskAltIcon className="text-white"/> Access to discussion forums</li>
               <li><TaskAltIcon className="text-white"/> Monthly progress tracking</li>
             </ul>
-            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-purple-700 transition absolute bottom-0 left-0 ">
+            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
               Choose Monthly Plan
             </button>
           </div>
 
           {/* Yearly Plan */}
-          <div className="relative bg-grey h-[520px] shadow-md rounded-3xl w-[360px] border">
+          <div className="relative bg-grey h-[520px] rounded-3xl w-[360px] outline outline-4 outline-primary-100 hover:scale-105 ease-in-out duration-700 shadow-200">
             <div className="px-6 pt-6 space-y-6">
              <div className="border-bg_secondary border-b-2 pb-8">
               <h2 className="text-2xl font-semibold text-primary">Yearly</h2>
@@ -48,7 +48,7 @@ function SubscriptionPlans () {
                 <li><TaskAltIcon className="text-white"/> Personalized communication with instructors</li>
               </ul>
             </div>
-            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-purple-700 transition absolute bottom-0 left-0 ">
+            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
               Choose Yearly Plan
             </button>
           </div>
