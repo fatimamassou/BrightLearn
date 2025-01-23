@@ -6,8 +6,6 @@ function Input({ type, Placeholder }) {
       pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
       placeholder="123-456-7890" 
       className={classStyle}
-      id={Id}
-      name={Name}
     />
       : type === 'textarea' ? <textarea id="textarea" name="textarea" cols="50" rows="4" placeholder={Placeholder} required wrap="soft" className={classStyle} />
         :<input 

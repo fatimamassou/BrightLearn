@@ -16,22 +16,22 @@ function Contact() {
           <form action="submitedform" className="space-y-4">
             <div>
               <Lable>Full Name</Lable>
-              <Input type="text" Placeholder="Full Name" Id="" Name="" />
+              <Input type="text" Placeholder="Full Name" />
             </div>
 
             <div>
               <Lable>Your Email</Lable>
-              <Input type="email" Placeholder="Email Address" Id="" Name="" />
+              <Input type="email" Placeholder="Email Address" />
             </div>
                         
             <div>
               <Lable>Subject</Lable>
-              <Input type="text" Placeholder="Subject" Id="" Name="" />
+              <Input type="text" Placeholder="Subject" />
             </div>
                         
             <div>
               <Lable>Message</Lable>
-              <Input type="textarea" Placeholder="Your Message ....." Id="" Name="" />                
+              <Input type="textarea" Placeholder="Your Message ....." />                
             </div>
                         
             <button type="submit" className="bg-primary text-white text-xl px-12 py-2 rounded-lg">
