@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import LogIn from './pages/Login';
 import Register from './pages/Register';
@@ -7,7 +8,6 @@ import SingUpStudent from './pages/SingUpStudent';
 import SingUpTeacher from './pages/SingUpTeacher';
 import SubscriptionPlans from './pages/Subscripe';
 import './styles/App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

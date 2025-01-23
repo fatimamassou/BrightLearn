@@ -1,6 +1,7 @@
 import { useFakeData } from '@faissaloux/fake-data';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { Link } from 'react-router-dom';
+
 import InfoCard from '../components/InfoCard';
 import Layout from '../layouts/Layout';
 import { subjects } from '../data' ;
@@ -19,7 +20,8 @@ function SeeMore() {
       identifier: 'internet.email',
       args:{ provider: '@gmail.com' } ,
     },
-    description : 'Hey there! I\'m Kim Namjoon, your Math guru with 10 years of experience.Let\'s make math less about numbers and more about discovering how awesome problem-solving can be!',
+    description :'Hey there! I\'m Kim Namjoon, your Math guru with 10 years of experience.Let\'s make math '+
+                'less about numbers and more about discovering how awesome problem-solving can be!',
         
   } , 1);
   return(

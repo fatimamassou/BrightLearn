@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
-import { Link } from 'react-router-dom';
 
 function SingUpStudent() {
   return(
@@ -49,7 +50,7 @@ function SingUpStudent() {
               <div className="text-center text-primary">Already in the club? Jump to 
                 <Link to='/login'>
                   <span 
-                  className='text-primary-200 font-semibold underline underline-offset-2'
+                    className='text-primary-200 font-semibold underline underline-offset-2'
                   > 
                     Log In!
                   </span> 

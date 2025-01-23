@@ -4,63 +4,70 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
+import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
+import pluginImport from 'eslint-plugin-import';
 
 export default [
   {
-    // Define the files to lint
     files: ['**/*.{js,jsx}'],
   },
   {
-    // Define ignored paths
     ignores: ['node_modules', 'dist', 'build'],
   },
   {
     languageOptions: {
-      globals: globals.browser, // Includes browser global variables
+      globals: globals.browser,
       parserOptions: {
-        ecmaVersion: 'latest', // Support modern ECMAScript features
-        sourceType: 'module', // Enable ES modules
+        ecmaVersion: 'latest',
+        sourceType: 'module',
         ecmaFeatures: {
-          jsx: true, // Enable JSX
+          jsx: true,
         },
       },
     },
     plugins: {
-      react: pluginReact, // React-specific rules
-      'react-hooks': pluginReactHooks, // React Hooks-specific rules
+      react: pluginReact,
+      'react-hooks': pluginReactHooks,
+      'jsx-a11y': pluginJsxA11y,
+      import: pluginImport,
     },
     rules: {
-      // General JavaScript Rules
-      'curly': 'error', // Enforce curly braces for all control statements
-      'eqeqeq': 'error', // Enforce === and !==
-      'no-console': 'warn', // Warn on console.log usage
-      'no-alert': 'error', // Disallow alert, confirm, and prompt
-      'arrow-parens': ['error', 'as-needed'], // No parentheses for single-param arrow functions
-      'max-len': ['error', { code: 120 }], // Maximum line length of 120 characters
-      'comma-dangle': ['error', 'always-multiline'], // Trailing commas for multiline
-      'semi': ['error', 'always'], // Enforce semicolons
-      'quotes': ['error', 'single'], // Enforce single quotes
-      'object-curly-spacing': ['error', 'always'], // Space inside curly braces
-      'array-bracket-spacing': ['error', 'never'], // No space inside array brackets
-      'indent': ['error', 2], // Enforce 2-space indentation
-      'eol-last': ['error', 'always'], // Enforce newline at end of files
+      'curly': 'error',
+      'eqeqeq': 'error',
+      'no-alert': 'error',
+      'arrow-parens': ['error', 'as-needed'],
+      'max-len': ['error', { code: 120, ignoreComments: true }],
+      'comma-dangle': ['error', 'always-multiline'],
+      'semi': ['error', 'always'],
+      'quotes': ['error', 'single'],
+      'object-curly-spacing': ['error', 'always'],
+      'array-bracket-spacing': ['error', 'never'],
+      'indent': ['error', 2],
+      'eol-last': ['error', 'always'],
 
-      // React-Specific Rules
-      'react/jsx-uses-react': 'off', // Not required for React 17+
-      'react/react-in-jsx-scope': 'off', // Not required for React 17+
-      'react/jsx-uses-vars': 'error', // Prevent variables in JSX from being marked as unused
-      'react/self-closing-comp': 'error', // Enforce self-closing tags for components with no children
+      // React Rules
+      'react/jsx-uses-react': 'off',
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-vars': 'error',
+      'react/self-closing-comp': 'error',
 
       // React Hooks Rules
-      'react-hooks/rules-of-hooks': 'error', // Enforce Hooks rules
-      'react-hooks/exhaustive-deps': 'warn', // Check dependencies in useEffect
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
 
+      // Accessibility Rules
+      'jsx-a11y/alt-text': 'warn',
+      'jsx-a11y/anchor-is-valid': 'warn',
+      'jsx-a11y/aria-role': 'warn',
+
+      // Import/Export Rules
+      'import/order': ['error', { 'newlines-between': 'always' }],
     },
     settings: {
       react: {
-        version: 'detect', // Automatically detect the React version
+        version: 'detect',
       },
     },
   },
-  pluginJs.configs.recommended, // Use recommended JavaScript rules
+  pluginJs.configs.recommended,
 ];

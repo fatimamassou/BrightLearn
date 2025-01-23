@@ -19,10 +19,13 @@ function About () {
         </div>
         <div className="block max-w-[620px] space-y-6 tracking-wide text-primary-100">
           <h1 className="font-normal text-5xl">Welcome to BrightLearn</h1>
-          <p className="leading-9 text-xl font-normal">BrightLearn is a platform dedicated to connecting students with expert tutors for personalized learning.
-                        Our goal is to provide accessible, high-quality education through interactive lessons tailored to individual needs.
-                        We believe every student deserves the opportunity to succeed, 
-                        and our passionate tutors are here to guide you every step of the way.
+          <p className="leading-9 text-xl font-normal">
+            BrightLearn is a platform dedicated to connecting students 
+            with expert tutors for personalized learning.
+            Our goal is to provide accessible, high-quality education
+            through interactive lessons tailored to individual needs.
+            We believe every student deserves the opportunity to succeed, 
+            and our passionate tutors are here to guide you every step of the way.
           </p>
           <div>
             <Button text="Let's Gooo!" to='/register' type="primary"/>                    

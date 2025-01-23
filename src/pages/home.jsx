@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from '../components/navBar';
 import SearchInput from '../components/SearchInput';
 
@@ -10,7 +9,11 @@ function Home() {
         <div className="h-screen flex items-center justify-center">
           <div className="w-1/3 space-y-20">
             <div className="w-full flex items-center justify-center">
-              <h1 className="tracking-wide text-center text-primary-100 font-normal text-5xl ">Where Learning Meets Passion</h1>
+              <h1 
+                className="tracking-wide text-center text-primary-100 font-normal text-5xl"
+              >
+                Where Learning Meets Passion
+              </h1>
             </div>
             <SearchInput width="w-full" height='h-12' />
           </div>

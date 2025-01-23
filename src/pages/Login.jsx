@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
-import { Link } from 'react-router-dom';
 function LogIn() {
   return(
     <div className="w-full lg:h-screen flex bg-secondary">

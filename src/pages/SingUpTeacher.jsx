@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
-import { Link } from 'react-router-dom';
 function SingUpTeacher() {
   const [selectedSubject , setSelectedSubject] = useState('') ;
     

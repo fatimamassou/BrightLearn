@@ -1,6 +1,7 @@
-import Tetors from '../components/TetorsComponent';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+
+import Tetors from '../components/TetorsComponent';
 import NavBar from '../components/navBar';
 
 function SeeAll() {

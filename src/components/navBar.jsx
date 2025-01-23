@@ -1,8 +1,10 @@
-import logo from '../pictures/logo.png';
-import Button from './buttons';
-import NavBarLinks from './NavBarLinks';
 import{ useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import logo from '../pictures/logo.png';
+
+import Button from './buttons';
+import NavBarLinks from './NavBarLinks';
 
 export default function NavBar({ route }){
   const [bgColor, setBgColor] = useState('bg-secondary');
