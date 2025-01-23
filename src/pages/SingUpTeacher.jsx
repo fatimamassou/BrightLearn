@@ -31,7 +31,10 @@ function SingUpTeacher() {
 
                             <div>
                                 <Lable>Your Spiciality</Lable>
-                                <Select onChange={(e) => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject} />
+                                <Select 
+                                onChange={(e) => setSelectedSubject(e.target.value)} 
+                                selectedSubject={selectedSubject} 
+                                />
                             </div>
 
                             <div>
@@ -50,7 +53,7 @@ function SingUpTeacher() {
                         </div>
                         <div className="space-y-6">
                             <Link 
-                            to='/login'
+                            to='/subscripe'
                             >
                                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
                             </Link>
