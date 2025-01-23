@@ -1,5 +1,6 @@
 import React from "react";
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import { Link } from "react-router-dom";
 
 function SubscriptionPlans () {
   return (
@@ -10,7 +11,7 @@ function SubscriptionPlans () {
         </h1>
         <div className="flex justify-center space-x-6">
           {/* Monthly Plan */}
-          <div className="relative bg-grey h-[500px] shadow-md rounded-3xl p-6 w-[360px] space-y-6 hover:scale-105 ease-in-out duration-700 shadow-200">
+          <div className="relative bg-grey h-[500px] rounded-3xl p-6 w-[360px] space-y-6 hover:scale-105 ease-in-out duration-700 shadow">
           <div className="border-bg_secondary border-b-2 pb-8">
             <h2 className="text-2xl font-semibold text-primary">Monthly</h2>
               <p>
@@ -25,9 +26,11 @@ function SubscriptionPlans () {
               <li><TaskAltIcon className="text-white"/> Access to discussion forums</li>
               <li><TaskAltIcon className="text-white"/> Monthly progress tracking</li>
             </ul>
-            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
-              Choose Monthly Plan
-            </button>
+            <Link to='/login'>
+              <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
+                Choose Monthly Plan
+              </button>
+            </Link> 
           </div>
 
           {/* Yearly Plan */}
@@ -48,9 +51,11 @@ function SubscriptionPlans () {
                 <li><TaskAltIcon className="text-white"/> Personalized communication with instructors</li>
               </ul>
             </div>
-            <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
-              Choose Yearly Plan
-            </button>
+            <Link to='/login'>
+              <button className="w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl hover:bg-primary transition absolute bottom-0 left-0 ">
+                Choose Yearly Plan
+              </button>
+            </Link>
           </div>
         </div>
 
