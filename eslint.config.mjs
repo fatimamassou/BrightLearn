@@ -1,109 +1,66 @@
+// eslint.config.mjs
+
 import globals from 'globals';
 import pluginJs from '@eslint/js';
-import pluginReactJs from 'eslint-plugin-react';
-import pluginReactHooksJs from 'eslint-plugin-react-hooks';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import typescriptParser from '@typescript-eslint/parser';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import pluginReact from 'eslint-plugin-react';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
 
 export default [
-    {
-        files: ['**/*.{js,mjs,cjs,jsx,ts,mts,tsx}'],
-    },
-    {
-        ignores: ['**/coverage/*'],
-    },
-    {
-        languageOptions: {
-            globals: globals.browser,
-            parser: typescriptParser,
-            parserOptions: {
-                ecmaFeatures: {
-                    jsx: true,
-                    useJSXTextNode: true,
-                },
-            },
+  {
+    // Define the files to lint
+    files: ['**/*.{js,jsx}'],
+  },
+  {
+    // Define ignored paths
+    ignores: ['node_modules', 'dist', 'build'],
+  },
+  {
+    languageOptions: {
+      globals: globals.browser, // Includes browser global variables
+      parserOptions: {
+        ecmaVersion: 'latest', // Support modern ECMAScript features
+        sourceType: 'module', // Enable ES modules
+        ecmaFeatures: {
+          jsx: true, // Enable JSX
         },
-        rules: {
-            curly: 'error',
-            eqeqeq: 'error',
-            'no-throw-literal': 'error',
-            semi: 'off',
-            'eol-last': 'error',
-            'no-console': 'error',
-            'no-alert': 'error',
-            'arrow-parens': ['error', 'as-needed'],
-            'max-len': ['error', {
-                'code': 120,
-                'tabWidth': 4,
-                'ignoreStrings': true,
-            }],
-            'comma-dangle': ['error', {
-                'arrays': 'always-multiline',
-                'objects': 'always-multiline',
-                'functions': 'never',
-            }],
-            'linebreak-style': ['error', 'unix'],
-            'object-curly-spacing': ['error', 'always'],
-            'array-bracket-spacing': ['error', 'never'],
-            '@typescript-eslint/no-unused-vars': [
-                'error',
-                {
-                    'varsIgnorePattern': '^_',
-                },
-            ],
-            'no-unused-vars': [
-                'error',
-                {
-                    'varsIgnorePattern': '^_',
-                },
-            ],
-            '@stylistic/ts/semi': 'error',
-            '@stylistic/ts/comma-spacing': 'error',
-            '@stylistic/ts/indent': 'error',
-            '@stylistic/ts/keyword-spacing': 'error',
-            '@stylistic/ts/key-spacing': 'error',
-            '@stylistic/ts/no-extra-semi': 'error',
-            '@stylistic/ts/quotes': ['error', 'single'],
-            '@stylistic/js/jsx-quotes': ['error', 'prefer-single'],
-            '@stylistic/js/padding-line-between-statements': [
-                'error',
-                { blankLine: 'always', prev: 'import', next: '*' },
-                { blankLine: 'never', prev: 'import', next: 'import' },
-                {
-                    blankLine: 'always',
-                    prev: '*',
-                    next: ['singleline-const', 'multiline-const', 'block-like'],
-                },
-                {
-                    blankLine: 'always',
-                    prev: ['singleline-const', 'multiline-const', 'block-like'],
-                    next: '*',
-                },
-                {
-                    blankLine: 'never',
-                    prev: 'const',
-                    next: 'const',
-                },
-                {
-                    blankLine: 'always',
-                    prev: 'multiline-const',
-                    next: 'multiline-const',
-                },
-            ],
-            'react/jsx-uses-react': 'error',
-            'react/jsx-uses-vars': 'error',
-            'react-hooks/rules-of-hooks': 'error',
-            'react-hooks/exhaustive-deps': 'warn',
-        },
-        plugins: {
-            '@stylistic/ts': stylisticTs,
-            '@stylistic/js': stylisticJs,
-            react: pluginReactJs,
-            'react-hooks': pluginReactHooksJs,
-            '@typescript-eslint': typescriptEslint,
-        },
+      },
     },
-    pluginJs.configs.recommended,
+    plugins: {
+      react: pluginReact, // React-specific rules
+      'react-hooks': pluginReactHooks, // React Hooks-specific rules
+    },
+    rules: {
+      // General JavaScript Rules
+      'curly': 'error', // Enforce curly braces for all control statements
+      'eqeqeq': 'error', // Enforce === and !==
+      'no-console': 'warn', // Warn on console.log usage
+      'no-alert': 'error', // Disallow alert, confirm, and prompt
+      'arrow-parens': ['error', 'as-needed'], // No parentheses for single-param arrow functions
+      'max-len': ['error', { code: 120 }], // Maximum line length of 120 characters
+      'comma-dangle': ['error', 'always-multiline'], // Trailing commas for multiline
+      'semi': ['error', 'always'], // Enforce semicolons
+      'quotes': ['error', 'single'], // Enforce single quotes
+      'object-curly-spacing': ['error', 'always'], // Space inside curly braces
+      'array-bracket-spacing': ['error', 'never'], // No space inside array brackets
+      'indent': ['error', 2], // Enforce 2-space indentation
+      'eol-last': ['error', 'always'], // Enforce newline at end of files
+
+      // React-Specific Rules
+      'react/jsx-uses-react': 'off', // Not required for React 17+
+      'react/react-in-jsx-scope': 'off', // Not required for React 17+
+      'react/jsx-uses-vars': 'error', // Prevent variables in JSX from being marked as unused
+      'react/self-closing-comp': 'error', // Enforce self-closing tags for components with no children
+
+      // React Hooks Rules
+      'react-hooks/rules-of-hooks': 'error', // Enforce Hooks rules
+      'react-hooks/exhaustive-deps': 'warn', // Check dependencies in useEffect
+
+    },
+    settings: {
+      react: {
+        version: 'detect', // Automatically detect the React version
+      },
+    },
+  },
+  pluginJs.configs.recommended, // Use recommended JavaScript rules
 ];

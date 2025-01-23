@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function SubscriptionPlans () {
   return (
@@ -12,13 +12,13 @@ function SubscriptionPlans () {
         <div className="flex justify-center space-x-6">
           {/* Monthly Plan */}
           <div className="relative bg-grey h-[500px] rounded-3xl p-6 w-[360px] space-y-6 hover:scale-105 ease-in-out duration-700 shadow">
-          <div className="border-bg_secondary border-b-2 pb-8">
-            <h2 className="text-2xl font-semibold text-primary">Monthly</h2>
+            <div className="border-bg_secondary border-b-2 pb-8">
+              <h2 className="text-2xl font-semibold text-primary">Monthly</h2>
               <p>
                 Students and teachers seeking on-demand access to learning
                 resources.
               </p>
-           </div>
+            </div>
             <div className="text-4xl font-semibold mb-6 text-primary"><span className="text-lg font-normal">$</span>9.99<span className="text-lg font-normal">/mo</span></div>
             <ul className="text-left mb-6 space-y-2">
               <li><TaskAltIcon className="text-white"/> Access to recorded lessons</li>
@@ -36,12 +36,12 @@ function SubscriptionPlans () {
           {/* Yearly Plan */}
           <div className="relative bg-grey h-[520px] rounded-3xl w-[360px] outline outline-4 outline-primary-100 hover:scale-105 ease-in-out duration-700 shadow-200">
             <div className="px-6 pt-6 space-y-6">
-             <div className="border-bg_secondary border-b-2 pb-8">
-              <h2 className="text-2xl font-semibold text-primary">Yearly</h2>
+              <div className="border-bg_secondary border-b-2 pb-8">
+                <h2 className="text-2xl font-semibold text-primary">Yearly</h2>
                 <p>
                   Students and teachers seeking year-round support and resources.
                 </p>
-             </div> 
+              </div> 
               <div className="text-4xl font-semibold mb-6 text-primary"><span className="text-lg font-normal">$</span>109.99<span className="text-lg font-normal">/mo</span></div>
               <ul className="text-left mb-6 space-y-2">
                 <li><TaskAltIcon className="text-white"/> Everything in Monthly, plus:</li>

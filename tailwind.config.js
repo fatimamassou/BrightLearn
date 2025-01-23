@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Include all source files
+    './src/**/*.{js,jsx,ts,tsx}', // Include all source files
   ],
   theme: {
     extend: {
@@ -19,10 +19,10 @@ module.exports = {
         bg_primary: '#EFD6FE',
         bg_secondary: '#F7F7FE' ,
         grey: '#D9D9D9',
-        white: '#ffffff'
+        white: '#ffffff',
       },
       backgroundImage: {
-        homePage: "url('/src/pectures/backgroundHome.jpeg')",
+        homePage: 'url(\'/src/pectures/backgroundHome.jpeg\')',
       },
       boxShadow: {
         DEFAULT: '0px -2px 20px 2px rgb(158, 146, 163)',
@@ -31,7 +31,7 @@ module.exports = {
         button: '2px 2px 7px #258694',
       },
       borderWidth: {
-        '3': "3px" ,
+        '3': '3px' ,
       },
       borderRadius: {
         'custom': '18%', 
