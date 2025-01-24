@@ -34,7 +34,7 @@ function Contact() {
               <Input type="textarea" Placeholder="Your Message ....." />                
             </div>
                         
-            <button type="submit" className="bg-primary text-white text-xl px-12 py-2 rounded-lg">
+            <button type="submit" className="bg-primary text-white text-xl px-12 py-2 rounded-lg hover:shadow-300 transition-all duration-700">
                             Send 
             </button>
           </form>
