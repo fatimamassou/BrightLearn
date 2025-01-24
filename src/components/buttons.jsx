@@ -4,9 +4,9 @@ export default function Button({ type, text, to, py = 'py-2', px ='px-6' }) {
     <Link to={to}> 
       <button 
         className={`${type === 'primary' ?
-          'bg-primary text-secondary border border-primary hover:text-secondary transition-all duration-500' 
+          'bg-primary text-secondary border border-primary hover:text-secondary transition-all duration-700' 
           :' text-primary border border-primary transition-all duration-500' 
-        } hover:shadow-300 hover:bg-transparent text-xl ${px} ${py} rounded-lg`}
+        } hover:shadow-300 text-xl ${px} ${py} rounded-lg`}
       >
         {text}
       </button>
