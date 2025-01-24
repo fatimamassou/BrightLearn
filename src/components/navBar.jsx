@@ -9,8 +9,8 @@ import NavBarLinks from './NavBarLinks';
 export default function NavBar({ route }){
   const [bgColor, setBgColor] = useState('bg-secondary');
   const [logoWidth, setLogoWidth] = useState('w-[250px]');
-  const styleBefore = `fixed top-0 left-0 w-full z-50 flex items-center justify-between px-10 py-2 ${bgColor}`;
-  const styleAfter = `fixed top-0 left-0 w-full z-50 flex items-center justify-between px-20 py-2 ${bgColor}`;
+  const styleBefore = `px-10 ${bgColor}`;
+  const styleAfter = `px-20 ${bgColor}`;
   const [style, setStyle] = useState(styleBefore);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function NavBar({ route }){
 
   return(
     <div 
-      className={style}
+      className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between py-2 ${style}`}
     > 
       <Link
         to="/"

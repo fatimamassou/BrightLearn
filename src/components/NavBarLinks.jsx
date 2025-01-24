@@ -6,7 +6,7 @@ export default function NavBarLinks({ text, to }) {
       to={to}
       smooth={true}
       duration={500}
-      className="text-primary text-xl hover:border-b-2 border-primary transition-all duration-200 cursor-pointer"
+      className="text-primary-100 text-xl tracking-[1px] transition-all duration-200 cursor-pointer hover:text-primary after:"
     >
       {text}
     </Link>
