@@ -5,8 +5,8 @@ export default function Button({ type, text, to, py = 'py-2', px ='px-6' }) {
       <button 
         className={`${type === 'primary' ?
           'bg-primary text-secondary border border-primary hover:text-secondary transition-all duration-500' 
-          :' text-primary border border-primary hover:text-secondary transition-all duration-500' 
-        }hover:bg-secondary-200 text-xl ${px} ${py} rounded-lg`}
+          :' text-primary border border-primary transition-all duration-500' 
+        } hover:shadow-300 text-xl ${px} ${py} rounded-lg`}
       >
         {text}
       </button>
