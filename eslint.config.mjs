@@ -1,67 +1,48 @@
-// eslint.config.mjs
-
-import globals from 'globals';
-import pluginJs from '@eslint/js';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
-import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginImport from 'eslint-plugin-import';
+import pluginJs from '@stylistic/eslint-plugin-js';
+import pluginTs from '@typescript-eslint/eslint-plugin';
+import globals from 'globals';
 
 export default [
   {
-    files: ['**/*.{js,jsx}'],
-  },
-  {
-    ignores: ['node_modules', 'dist', 'build'],
-  },
-  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
           jsx: true,
         },
+        project: './tsconfig.json', // TypeScript support
       },
     },
     plugins: {
       react: pluginReact,
       'react-hooks': pluginReactHooks,
-      'jsx-a11y': pluginJsxA11y,
-      import: pluginImport,
+      js: pluginJs,
+      '@typescript-eslint': pluginTs,
     },
     rules: {
-      'curly': 'error',
-      'eqeqeq': 'error',
-      'no-alert': 'error',
-      'arrow-parens': ['error', 'as-needed'],
-      'max-len': ['error', { code: 120, ignoreComments: true }],
-      'comma-dangle': ['error', 'always-multiline'],
+      // JavaScript/TypeScript rules
       'semi': ['error', 'always'],
       'quotes': ['error', 'single'],
-      'object-curly-spacing': ['error', 'always'],
-      'array-bracket-spacing': ['error', 'never'],
       'indent': ['error', 2],
-      'eol-last': ['error', 'always'],
+      'no-unused-vars': 'off', // Handled by TypeScript
+      '@typescript-eslint/no-unused-vars': ['error'],
 
-      // React Rules
-      'react/jsx-uses-react': 'off',
+      // React rules
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-vars': 'error',
       'react/self-closing-comp': 'error',
 
-      // React Hooks Rules
+      // React Hooks rules
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-
-      // Accessibility Rules
-      'jsx-a11y/alt-text': 'warn',
-      'jsx-a11y/anchor-is-valid': 'warn',
-      'jsx-a11y/aria-role': 'warn',
-
-      // Import/Export Rules
-      'import/order': ['error', { 'newlines-between': 'always' }],
     },
     settings: {
       react: {
@@ -69,5 +50,4 @@ export default [
       },
     },
   },
-  pluginJs.configs.recommended,
 ];
