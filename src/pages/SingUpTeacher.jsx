@@ -12,7 +12,7 @@ function SingUpTeacher() {
   const [description , setDescription] = useState(undefined) ;
   const [password , setPassword] = useState(undefined) ;
   const [confirmePassword , setConfirmePassword] = useState(undefined) ;
-  
+  const role = 'teacher' ;
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2 flex items-center justify-center">
