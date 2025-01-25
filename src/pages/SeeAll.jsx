@@ -11,7 +11,7 @@ function SeeAll() {
   },[location]);
   return(
     <section id="seeAll" >
-      <div className="bg-bg_secondary w-full h-dsv">
+      <div className="bg-bg_secondary w-full min-h-screen">
         <div className="fixed top-0 left-0 w-full z-50">
           <NavBar />
         </div>
