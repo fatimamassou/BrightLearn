@@ -5,31 +5,31 @@ import studentImg from '../pictures/gambary.png';
 import { useState } from 'react';
 
 function SingUpStudent() {
-    const [fullName , setFullName] = useState(undefined) ;
-    const [email , setEmail] = useState(undefined) ;
-    const [phone , setPhone] = useState(0) ;
-    const [password , setPassword] = useState(undefined) ;
-    const [confirmePassword , setConfirmePassword] = useState(undefined) ;
+  const [fullName , setFullName] = useState(undefined) ;
+  const [email , setEmail] = useState(undefined) ;
+  const [phone , setPhone] = useState(0) ;
+  const [password , setPassword] = useState(undefined) ;
+  const [confirmePassword , setConfirmePassword] = useState(undefined) ;
   
-    const addTeacher = () => {
-      //
-      cancelSelection();
-    };
+  const addTeacher = () => {
+    //
+    cancelSelection();
+  };
   
-    const submit = (e) => {
-      e.preventDefault();
-      addTeacher();
-    };
+  const submit = (e) => {
+    e.preventDefault();
+    addTeacher();
+  };
   
-    const cancelSelection = () => {
-      setFullName(undefined);
-      setEmail(undefined);
-      setPhone(0);
-      setSelectedSubject(undefined);
-      setDescription(undefined);
-      setPassword(undefined);
-      setConfirmePassword(undefined);
-    };
+  const cancelSelection = () => {
+    setFullName(undefined);
+    setEmail(undefined);
+    setPhone(0);
+    setSelectedSubject(undefined);
+    setDescription(undefined);
+    setPassword(undefined);
+    setConfirmePassword(undefined);
+  };
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2">
