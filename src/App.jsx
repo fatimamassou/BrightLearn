@@ -7,7 +7,7 @@ import SeeAll from './pages/SeeAll';
 import SeeMore from './pages/SeeMore';
 import SingUpStudent from './pages/SingUpStudent';
 import SingUpTeacher from './pages/SingUpTeacher';
-import SubscriptionPlans from './pages/Subscripe';
+import SubscriptionPlans from './pages/Subscribe';
 import './styles/App.css';
 
 function App() {

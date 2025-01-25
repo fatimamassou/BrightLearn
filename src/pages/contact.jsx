@@ -7,8 +7,8 @@ import Insta from '../pictures/App icon.jpeg';
 import Pinterest from '../pictures/Pinterest.jpeg';
 import Tiktok from '../pictures/Purple aesthetic icon TikTok.jpeg';
 
-
 function Contact() {
+  const socailIconStyle = 'rounded-lg hover:shadow-300 transition-all duration-500';
   return(
     <section id="contact">
       <div className="h-screen bg-bg_secondary flex items-center justify-center py-10 space-x-12">
@@ -34,7 +34,8 @@ function Contact() {
               <Input type="textarea" Placeholder="Your Message ....." />                
             </div>
                         
-            <button type="submit" className="bg-primary text-white text-xl px-12 py-2 rounded-lg">
+            <button type="submit" 
+              className="bg-primary text-white text-xl px-12 py-2 rounded-lg hover:shadow-300 transition-all duration-700" >
                             Send 
             </button>
           </form>
@@ -71,16 +72,16 @@ function Contact() {
           <div className="block space-y-2 text-lg font-medium text-secondary-200">
             <h1>Follow Us!</h1>
             <div className="flex space-x-2">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={socailIconStyle}>
                 <img src={Insta} alt="Instagram" className="w-8 rounded-lg" />
               </a>
-              <a href="https://www.tiktok.com" target="_blank"  rel="noopener noreferrer">
+              <a href="https://www.tiktok.com" target="_blank"  rel="noopener noreferrer" className={socailIconStyle}>
                 <img src={Tiktok} alt="TikTok" className="w-8 rounded-lg" />
               </a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className={socailIconStyle}>
                 <img src={Youtube} alt="YouTube" className="w-8 rounded-lg" />
               </a>
-              <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" className={socailIconStyle}>
                 <img src={Pinterest} alt="Pinterest" className="w-8 rounded-lg" />
               </a>
             </div>
