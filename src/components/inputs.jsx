@@ -1,14 +1,14 @@
 
-function Input({ type, Placeholder, value, onClick }) {
+function Input({ type, Placeholder, value, onChange }) {
   const classStyle = 'w-full border-2 border-primary-200 rounded-xl outline-0 py-2 px-4 '+
                       'text-primary-100 font-normal bg-transparent';
   return(            
     type === 'tel' ?  <input
       type="tel"
-      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
       placeholder="123-456-7890" 
       className={classStyle}
-      onClick={onClick}
+      onChange={onChange}
       value={value}
       required
     />
@@ -21,7 +21,7 @@ function Input({ type, Placeholder, value, onClick }) {
           placeholder={Placeholder} 
           wrap="soft" 
           className={classStyle}
-          onClick={onClick}
+          onChange={onChange}
           value={value} 
           required 
         />
@@ -29,7 +29,7 @@ function Input({ type, Placeholder, value, onClick }) {
           type={type}
           className={classStyle}
           placeholder={Placeholder}
-          onClick={onClick}
+          onChange={onChange}
           value={value}
           required
         />

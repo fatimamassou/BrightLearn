@@ -2,34 +2,44 @@ import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Alert from '../components/Alert';  
 
 function SingUpStudent() {
-  const [fullName , setFullName] = useState(undefined) ;
-  const [email , setEmail] = useState(undefined) ;
-  const [phone , setPhone] = useState(0) ;
-  const [password , setPassword] = useState(undefined) ;
-  const [confirmePassword , setConfirmePassword] = useState(undefined) ;
+  const [fullName , setFullName] = useState() ;
+  const [email , setEmail] = useState() ;
+  const [phone , setPhone] = useState() ;
+  const [password , setPassword] = useState() ;
+  const [confirmePassword , setConfirmePassword] = useState() ;
+  const [showAlert , setShowAlert] = useState(false);
   
-  const addTeacher = () => {
+  const addStudent = () => {
     //
+    setShowAlert(true);
     cancelSelection();
   };
   
   const submit = (e) => {
     e.preventDefault();
-    addTeacher();
+    addStudent();
   };
   
   const cancelSelection = () => {
-    setFullName(undefined);
-    setEmail(undefined);
-    setPhone(0);
-    setSelectedSubject(undefined);
-    setDescription(undefined);
-    setPassword(undefined);
-    setConfirmePassword(undefined);
+    setFullName('');
+    setEmail('');
+    setPhone('');
+    setPassword('');
+    setConfirmePassword('');
   };
+  useEffect(() => {
+    if (showAlert) {
+      const timer = setTimeout(() => {
+        setShowAlert(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [showAlert]);
+
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2">
@@ -37,6 +47,7 @@ function SingUpStudent() {
       </div>
       <div className="lg:w-1/2 flex items-center justify-center">
         <div className="w-2/3 space-y-6">
+          {showAlert && <Alert message={`${fullName} added successfuly .`} type="success"/>}
           <h1 className="text-4xl text-primary-100 text-center">Sign Up</h1>
           <form onSubmit={submit} className="space-y-12">
             <div className="space-y-4">
@@ -44,7 +55,7 @@ function SingUpStudent() {
                 <Lable>Full Name</Lable>
                 <Input type="text" 
                   Placeholder="Full Name" 
-                  onClick={(e)=> setFullName(e.target.value)} 
+                  onChange={(e)=> setFullName(e.target.value)} 
                   value={fullName}
                 />
               </div>
@@ -53,7 +64,7 @@ function SingUpStudent() {
                 <Lable>Your Email</Lable>
                 <Input type="email" 
                   Placeholder="Email Address" 
-                  onClick={(e)=> setEmail(e.target.value)} 
+                  onChange={(e)=> setEmail(e.target.value)} 
                   value={email}
                 />
               </div>
@@ -62,7 +73,7 @@ function SingUpStudent() {
                 <Lable>Your Phone</Lable>
                 <Input type="tel"
                   Placeholder="Phone number" 
-                  onClick={(e)=> setPhone(e.target.value)} 
+                  onChange={(e)=> setPhone(e.target.value)} 
                   value={phone}
                 />
               </div>
@@ -71,7 +82,7 @@ function SingUpStudent() {
                 <Lable>Password</Lable>
                 <Input type="password" 
                   Placeholder="Password" 
-                  onClick={(e)=> setPassword(e.target.value)} 
+                  onChange={(e)=> setPassword(e.target.value)} 
                   value={password}
                 />
               </div>
@@ -80,17 +91,15 @@ function SingUpStudent() {
                 <Lable>Confirme Password</Lable>
                 <Input type="password" 
                   Placeholder="Confirme Password" 
-                  onClick={(e)=> setConfirmePassword(e.target.value)} 
+                  onChange={(e)=> setConfirmePassword(e.target.value)} 
                   value={confirmePassword}
                 />
               </div>
             </div>
             <div className="space-y-6">
-              <Link 
-                to='/subscripe'
-              >
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
-              </Link>
+             
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full" type='submit'>Jump In!</button> 
+              
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 
                 <Link to='/login'>
