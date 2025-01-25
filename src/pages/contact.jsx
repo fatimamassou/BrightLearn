@@ -35,8 +35,8 @@ function Contact() {
             </div>
                         
             <button 
-            type="submit" 
-            className="bg-primary text-white text-xl px-12 py-2 rounded-lg 
+              type="submit" 
+              className="bg-primary text-white text-xl px-12 py-2 rounded-lg 
                       hover:shadow-300 transition-all duration-700"
             >
                             Send 
