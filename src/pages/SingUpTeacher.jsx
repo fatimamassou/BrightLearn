@@ -4,6 +4,7 @@ import Input from '../components/inputs';
 import Lable from '../components/lable';
 import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
+
 function SingUpTeacher() {
   const [fullName , setFullName] = useState(undefined) ;
   const [email , setEmail] = useState(undefined) ;
@@ -32,6 +33,7 @@ function SingUpTeacher() {
     setPassword(undefined);
     setConfirmePassword(undefined);
   };
+
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2 flex items-center justify-center">

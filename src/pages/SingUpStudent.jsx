@@ -2,8 +2,34 @@ import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
+import { useState } from 'react';
 
 function SingUpStudent() {
+    const [fullName , setFullName] = useState(undefined) ;
+    const [email , setEmail] = useState(undefined) ;
+    const [phone , setPhone] = useState(0) ;
+    const [password , setPassword] = useState(undefined) ;
+    const [confirmePassword , setConfirmePassword] = useState(undefined) ;
+  
+    const addTeacher = () => {
+      //
+      cancelSelection();
+    };
+  
+    const submit = (e) => {
+      e.preventDefault();
+      addTeacher();
+    };
+  
+    const cancelSelection = () => {
+      setFullName(undefined);
+      setEmail(undefined);
+      setPhone(0);
+      setSelectedSubject(undefined);
+      setDescription(undefined);
+      setPassword(undefined);
+      setConfirmePassword(undefined);
+    };
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2">
@@ -12,31 +38,51 @@ function SingUpStudent() {
       <div className="lg:w-1/2 flex items-center justify-center">
         <div className="w-2/3 space-y-6">
           <h1 className="text-4xl text-primary-100 text-center">Sign Up</h1>
-          <form action="submitedform" className="space-y-12">
+          <form onSubmit={submit} className="space-y-12">
             <div className="space-y-4">
               <div>
                 <Lable>Full Name</Lable>
-                <Input type="text" Placeholder="Full Name"/>
+                <Input type="text" 
+                  Placeholder="Full Name" 
+                  onClick={(e)=> setFullName(e.target.value)} 
+                  value={fullName}
+                />
               </div>
 
               <div>
                 <Lable>Your Email</Lable>
-                <Input type="email" Placeholder="Email Address"/>
+                <Input type="email" 
+                  Placeholder="Email Address" 
+                  onClick={(e)=> setEmail(e.target.value)} 
+                  value={email}
+                />
               </div>
                             
               <div>
                 <Lable>Your Phone</Lable>
-                <Input type="tel" Placeholder="Phone number"/>
+                <Input type="tel"
+                  Placeholder="Phone number" 
+                  onClick={(e)=> setPhone(e.target.value)} 
+                  value={phone}
+                />
               </div>
                             
               <div>
                 <Lable>Password</Lable>
-                <Input type="password" Placeholder="Password"/>
+                <Input type="password" 
+                  Placeholder="Password" 
+                  onClick={(e)=> setPassword(e.target.value)} 
+                  value={password}
+                />
               </div>
                             
               <div>
                 <Lable>Confirme Password</Lable>
-                <Input type="password" Placeholder="Confirme Password"/>
+                <Input type="password" 
+                  Placeholder="Confirme Password" 
+                  onClick={(e)=> setConfirmePassword(e.target.value)} 
+                  value={confirmePassword}
+                />
               </div>
             </div>
             <div className="space-y-6">
