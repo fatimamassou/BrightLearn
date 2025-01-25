@@ -25,8 +25,6 @@ function SingUpStudent() {
     setFullName(undefined);
     setEmail(undefined);
     setPhone(0);
-    setSelectedSubject(undefined);
-    setDescription(undefined);
     setPassword(undefined);
     setConfirmePassword(undefined);
   };
@@ -89,15 +87,14 @@ function SingUpStudent() {
               <Link 
                 to='/subscripe'
               >
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full shadow-100 ">Jump In!</button> 
               </Link>
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 
                 <Link to='/login'>
                   <span 
                     className='text-primary-200 font-semibold underline underline-offset-2'
-                  > 
-                    Log In!
+                  > Log In!
                   </span> 
                 </Link>
               </div>

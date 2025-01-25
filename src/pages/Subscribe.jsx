@@ -1,9 +1,17 @@
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import { Link } from 'react-router-dom';
 
 function SubscriptionPlans () {
   return (
     <div className="min-h-screen text-primary-100 flex items-center justify-center bg-bg_secondary p-6">
+      <Link to='/register' >
+          <KeyboardDoubleArrowLeftIcon 
+            fontSize='large'
+            className='cursor-pointer transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-10 
+                        duration-700 text-primary-100 absolute lg:top-20 lg:left-40 md:top-10 md:left-8'
+          />
+        </Link>
       <div className="max-w-4xl w-full text-center space-y-24">
         <h1 className="text-4xl font-semibold-100 mb-6 text-primary">
           Let's Level Up Your Learning!

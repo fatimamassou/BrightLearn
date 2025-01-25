@@ -1,5 +1,5 @@
-import { useFakeData } from '@faissaloux/fake-data';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import { useFakeData } from '@faissaloux/fake-data';
 import { Link } from 'react-router-dom';
 
 import InfoCard from '../components/InfoCard';

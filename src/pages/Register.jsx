@@ -18,7 +18,7 @@ function Register() {
           <KeyboardDoubleArrowLeftIcon 
             fontSize='large'
             className={'cursor-pointer transition ease-in-out delay-150 lg:left-40 md:top-10 md:left-8'+
-              'hover:-translate-x-1 hover:scale-10 duration-800 text-primary-100 absolute lg:top-16 '}
+              ' hover:-translate-x-1 hover:scale-10 duration-800 text-primary-100 absolute lg:top-20 '}
           />
         </Link>
         <h1 
