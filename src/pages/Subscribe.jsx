@@ -134,7 +134,7 @@ function SubscriptionPlans () {
             </div>
             <Link to='/login'>
               <button 
-                className={'w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl'+
+                className={'w-full bg-primary-100 text-xl text-white py-2 rounded-b-3xl '+
                   'hover:bg-primary transition absolute bottom-0 left-0'}
               >
                 Choose Yearly Plan
