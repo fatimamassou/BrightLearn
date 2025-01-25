@@ -22,12 +22,12 @@ function LogIn() {
             <div className="space-y-4">
               <div>
                 <Lable>Your Email</Lable>
-                <Input type="email" Placeholder="Email Address" Id="" Name="" />
+                <Input type="email" Placeholder="Email Address"/>
               </div>
                             
               <div>
                 <Lable>Password</Lable>
-                <Input type="password" Placeholder="Password" Id="" Name="" />
+                <Input type="password" Placeholder="Password"/>
               </div>
                             
             </div>
@@ -35,7 +35,7 @@ function LogIn() {
               <Link 
                 to='/'
               >
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full">Back to Learning</button> 
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full hover:shadow-200 ">Back to Learning</button> 
               </Link>
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Not in the club yet?  

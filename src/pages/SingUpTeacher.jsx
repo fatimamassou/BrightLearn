@@ -6,13 +6,13 @@ import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
 
 function SingUpTeacher() {
-  const [fullName , setFullName] = useState(undefined) ;
-  const [email , setEmail] = useState(undefined) ;
-  const [phone , setPhone] = useState(0) ;
-  const [selectedSubject , setSelectedSubject] = useState(undefined) ;
-  const [description , setDescription] = useState(undefined) ;
-  const [password , setPassword] = useState(undefined) ;
-  const [confirmePassword , setConfirmePassword] = useState(undefined) ;
+  const [fullName , setFullName] = useState('') ;
+  const [email , setEmail] = useState('') ;
+  const [phone , setPhone] = useState('') ;
+  const [selectedSubject , setSelectedSubject] = useState('') ;
+  const [description , setDescription] = useState('') ;
+  const [password , setPassword] = useState('') ;
+  const [confirmePassword , setConfirmePassword] = useState('') ;
 
   const addTeacher = () => {
     //
@@ -25,13 +25,13 @@ function SingUpTeacher() {
   };
 
   const cancelSelection = () => {
-    setFullName(undefined);
-    setEmail(undefined);
-    setPhone(0);
-    setSelectedSubject(undefined);
-    setDescription(undefined);
-    setPassword(undefined);
-    setConfirmePassword(undefined);
+    setFullName('');
+    setEmail('');
+    setPhone('');
+    setSelectedSubject('');
+    setDescription('');
+    setPassword('');
+    setConfirmePassword('');
   };
 
   return(
@@ -106,7 +106,7 @@ function SingUpTeacher() {
               <Link 
                 to='/subscripe'
               >
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full hover:shadow-200 ">Jump In!</button> 
               </Link>
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 

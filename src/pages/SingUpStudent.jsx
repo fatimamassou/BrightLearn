@@ -5,11 +5,11 @@ import studentImg from '../pictures/gambary.png';
 import { useState } from 'react';
 
 function SingUpStudent() {
-  const [fullName , setFullName] = useState(undefined) ;
-  const [email , setEmail] = useState(undefined) ;
-  const [phone , setPhone] = useState(0) ;
-  const [password , setPassword] = useState(undefined) ;
-  const [confirmePassword , setConfirmePassword] = useState(undefined) ;
+  const [fullName , setFullName] = useState('') ;
+  const [email , setEmail] = useState('') ;
+  const [phone , setPhone] = useState('') ;
+  const [password , setPassword] = useState('') ;
+  const [confirmePassword , setConfirmePassword] = useState('') ;
   
   const addTeacher = () => {
     //
@@ -22,13 +22,11 @@ function SingUpStudent() {
   };
   
   const cancelSelection = () => {
-    setFullName(undefined);
-    setEmail(undefined);
-    setPhone(0);
-    setSelectedSubject(undefined);
-    setDescription(undefined);
-    setPassword(undefined);
-    setConfirmePassword(undefined);
+    setFullName('');
+    setEmail('');
+    setPhone('');
+    setPassword('');
+    setConfirmePassword('');
   };
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
@@ -89,15 +87,14 @@ function SingUpStudent() {
               <Link 
                 to='/subscripe'
               >
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full ">Jump In!</button> 
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full hover:shadow-200 ">Jump In!</button> 
               </Link>
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 
                 <Link to='/login'>
                   <span 
                     className='text-primary-200 font-semibold underline underline-offset-2'
-                  > 
-                    Log In!
+                  > Log In!
                   </span> 
                 </Link>
               </div>

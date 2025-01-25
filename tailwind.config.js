@@ -29,6 +29,7 @@ module.exports = {
         100: '8px 8px 10px 2px rgb(158, 146, 163)',
         200: '4px 6px 14px rgb(78, 52, 90)',
         300: '0px 0px 10px rgb(78, 52, 90)',
+        400: '1px 4px 10px rgb(147, 76, 156)',
         button: '2px 2px 7px #258694',
       },
       borderWidth: {
