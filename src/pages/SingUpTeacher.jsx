@@ -23,7 +23,7 @@ function SingUpTeacher() {
     e.preventDefault();
     addTeacher();
   };
-
+  
   const cancelSelection = () => {
     setFullName('');
     setEmail('');
@@ -45,8 +45,8 @@ function SingUpTeacher() {
                 <Lable>Full Name</Lable>
                 <Input type="text" 
                   Placeholder="Full Name" 
-                  onClick={(e)=> setFullName(e.target.value)} 
-                  value={fullName}
+                  value={fullName}            
+                  onChange={(e)=> setFullName(e.target.value)} 
                 />
               </div>
 
@@ -54,8 +54,8 @@ function SingUpTeacher() {
                 <Lable>Your Email</Lable>
                 <Input type="email" 
                   Placeholder="Email Address" 
-                  onClick={(e)=> setEmail(e.target.value)} 
                   value={email}
+                  onChange={(e)=> setEmail(e.target.value)} 
                 />
               </div>
                             
@@ -63,7 +63,7 @@ function SingUpTeacher() {
                 <Lable>Your Phone</Lable>
                 <Input type="tel"
                   Placeholder="Phone number" 
-                  onClick={(e)=> setPhone(e.target.value)} 
+                  onChange={(e)=> setPhone(e.target.value)} 
                   value={phone}
                 />
               </div>
@@ -80,7 +80,7 @@ function SingUpTeacher() {
                 <Lable>Description</Lable>
                 <Input type="text" 
                   Placeholder="Your profile ..." 
-                  onClick={(e)=> setDescription(e.target.value)}
+                  onChange={(e)=> setDescription(e.target.value)}
                   value={description}
                 />
               </div>
@@ -88,7 +88,7 @@ function SingUpTeacher() {
                 <Lable>Password</Lable>
                 <Input type="password" 
                   Placeholder="Password" 
-                  onClick={(e)=> setPassword(e.target.value)} 
+                  onChange={(e)=> setPassword(e.target.value)} 
                   value={password}
                 />
               </div>
@@ -97,7 +97,7 @@ function SingUpTeacher() {
                 <Lable>Confirme Password</Lable>
                 <Input type="password" 
                   Placeholder="Confirme Password" 
-                  onClick={(e)=> setConfirmePassword(e.target.value)} 
+                  onChange={(e)=> setConfirmePassword(e.target.value)} 
                   value={confirmePassword}
                 />
               </div>
