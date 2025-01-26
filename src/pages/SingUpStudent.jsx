@@ -5,11 +5,11 @@ import studentImg from '../pictures/gambary.png';
 import { useState } from 'react';
 
 function SingUpStudent() {
-  const [fullName , setFullName] = useState() ;
-  const [email , setEmail] = useState() ;
-  const [phone , setPhone] = useState() ;
-  const [password , setPassword] = useState() ;
-  const [confirmePassword , setConfirmePassword] = useState() ;
+  const [fullName , setFullName] = useState('') ;
+  const [email , setEmail] = useState('') ;
+  const [phone , setPhone] = useState('') ;
+  const [password , setPassword] = useState('') ;
+  const [confirmePassword , setConfirmePassword] = useState('') ;
   
   const addStudent = () => {
     //
