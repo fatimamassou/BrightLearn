@@ -85,9 +85,11 @@ function SingUpStudent() {
               </div>
             </div>
             <div className="space-y-6">
-             
-              <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full" type='submit'>Jump In!</button> 
-              
+              <Link 
+                to='/subscripe'
+              >
+                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full hover:shadow-200 ">Jump In!</button> 
+              </Link>
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 
                 <Link to='/login'>
