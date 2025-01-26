@@ -86,7 +86,7 @@ function SingUpStudent() {
             </div>
             <div className="space-y-6">
              
-                <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full" type='submit'>Jump In!</button> 
+              <button className="bg-primary-100 text-white text-xl py-3 rounded-lg w-full" type='submit'>Jump In!</button> 
               
               <div className="h-[1px] w-full bg-primary-200" />
               <div className="text-center text-primary">Already in the club? Jump to 
