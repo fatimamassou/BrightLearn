@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import studentImg from '../pictures/gambary.png';
-import { useEffect, useState } from 'react';
-import Alert from '../components/Alert';  
+import { useState } from 'react';
 
 function SingUpStudent() {
   const [fullName , setFullName] = useState() ;
@@ -11,11 +10,9 @@ function SingUpStudent() {
   const [phone , setPhone] = useState() ;
   const [password , setPassword] = useState() ;
   const [confirmePassword , setConfirmePassword] = useState() ;
-  const [showAlert , setShowAlert] = useState(false);
   
   const addStudent = () => {
     //
-    setShowAlert(true);
     cancelSelection();
   };
   
@@ -31,14 +28,6 @@ function SingUpStudent() {
     setPassword('');
     setConfirmePassword('');
   };
-  useEffect(() => {
-    if (showAlert) {
-      const timer = setTimeout(() => {
-        setShowAlert(false);
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [showAlert]);
 
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
@@ -47,7 +36,6 @@ function SingUpStudent() {
       </div>
       <div className="lg:w-1/2 flex items-center justify-center">
         <div className="w-2/3 space-y-6">
-          {showAlert && <Alert message={`${fullName} added successfuly .`} type="success"/>}
           <h1 className="text-4xl text-primary-100 text-center">Sign Up</h1>
           <form onSubmit={submit} className="space-y-12">
             <div className="space-y-4">
