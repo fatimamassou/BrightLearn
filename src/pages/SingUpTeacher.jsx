@@ -6,13 +6,13 @@ import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
 
 function SingUpTeacher() {
-  const [fullName , setFullName] = useState() ;
-  const [email , setEmail] = useState() ;
-  const [phone , setPhone] = useState() ;
-  const [selectedSubject , setSelectedSubject] = useState() ;
-  const [description , setDescription] = useState() ;
-  const [password , setPassword] = useState() ;
-  const [confirmePassword , setConfirmePassword] = useState() ;
+  const [fullName , setFullName] = useState('') ;
+  const [email , setEmail] = useState('') ;
+  const [phone , setPhone] = useState('') ;
+  const [selectedSubject , setSelectedSubject] = useState('') ;
+  const [description , setDescription] = useState('') ;
+  const [password , setPassword] = useState('') ;
+  const [confirmePassword , setConfirmePassword] = useState('') ;
 
   const addTeacher = () => {
     //
