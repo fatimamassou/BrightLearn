@@ -16,6 +16,7 @@ function SingUpTeacher() {
 
   const addTeacher = () => {
     //
+    cancelSelection();
   };
 
   const submit = (e) => {
@@ -23,6 +24,16 @@ function SingUpTeacher() {
     addTeacher();
   };
   
+  const cancelSelection = () => {
+    setFullName('');
+    setEmail('');
+    setPhone('');
+    setSelectedSubject('');
+    setDescription('');
+    setPassword('');
+    setConfirmePassword('');
+  };
+
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2 flex items-center justify-center">
