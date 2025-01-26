@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import Select from '../components/select';
 import teacherImg from '../pictures/glory.jpeg';
-import Alert from '../components/Alert';  
 
 function SingUpTeacher() {
   const [fullName , setFullName] = useState() ;
@@ -14,30 +13,19 @@ function SingUpTeacher() {
   const [description , setDescription] = useState() ;
   const [password , setPassword] = useState() ;
   const [confirmePassword , setConfirmePassword] = useState() ;
-  const [showAlert , setShowAlert] = useState(false);
+
   const addTeacher = () => {
     //
-    setShowAlert(true);
   };
 
   const submit = (e) => {
     e.preventDefault();
     addTeacher();
   };
-
-  useEffect(() => {
-    if (showAlert) {
-      const timer = setTimeout(() => {
-        setShowAlert(false);
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [showAlert]);
   
   return(
     <div className="w-full lg:h-screen flex bg-secondary">
       <div className="lg:w-1/2 flex items-center justify-center">
-        {showAlert && <Alert message={`${fullName} added successfuly .`} type="success"/>}
         <div className="w-2/3 space-y-4">
           <h1 className="text-4xl text-primary-100 text-center">Sign Up</h1>
           <form onSubmit={submit} className="space-y-4">
