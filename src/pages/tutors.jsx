@@ -2,11 +2,9 @@ import { useFakeData } from '@faissaloux/fake-data';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
 import { subjects } from '../data' ;
 import Card from '../components/card'; 
 import Category from '../components/Category';
-
 
 function Tutors() {
   const subjectHave = subjects.filter(element=>{return element !== 'All';}) ;  
