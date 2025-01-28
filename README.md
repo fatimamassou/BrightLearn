@@ -21,7 +21,7 @@ BrightLearn is an innovative platform where students can access online courses t
 1. Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/brightlearn.git
+git clone https://github.com/fatimamassou/BrightLearn.git
 ```
 ```bash
 cd brightlearn
