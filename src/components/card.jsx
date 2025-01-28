@@ -4,7 +4,7 @@ function Card({ card }) {
   const cardInfo = card ;
   return(
     <div className="px-6 py-6 h-80">
-      <div className="w-80 bg-grey rounded-2xl px-2 py-2 flex space-x-4 shadow">
+      <div className="w-80 bg-grey rounded-2xl px-2 py-2 flex space-x-4 shadow cursor-pointer">
         <div className="">
           <img src={cardInfo.avatar} alt="avatar" className="w-28 h-60 rounded-2xl"/>
         </div>
