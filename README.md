@@ -1,6 +1,6 @@
 # BrightLearn
 
-BrightLearn is an innovative platform where students can access online courses taught by professional instructors. This project is built with modern technologies to provide a seamless learning experience.
+BrightLearn is a platform where students learn online from expert teachers with a smooth experience.
 
 ## Technologies Used
 
