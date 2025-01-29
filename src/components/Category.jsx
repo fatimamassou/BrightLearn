@@ -6,7 +6,7 @@ function Category ({ onChange, selectedSubject }) {
     <select 
       id="subject" 
       name="subject" 
-      className="px-3 w-50 h-12 bg-primary text-secondary rounded-lg outline-none"
+      className="px-3 w-50 h-12 bg-primary text-secondary rounded-lg outline-none cursor-pointer"
       onChange={onChange}
       value={selectedSubject}
     >
