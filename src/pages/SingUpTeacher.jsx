@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
 import Select from '../components/select';
-import teacherImg from '../pictures/glory.jpeg';
+import teacherImg from '../assets/glory.jpeg';
 
 function SingUpTeacher() {
   const [fullName , setFullName] = useState('') ;

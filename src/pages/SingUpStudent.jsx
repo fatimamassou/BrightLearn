@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Input from '../components/inputs';
 import Lable from '../components/lable';
-import studentImg from '../pictures/gambary.png';
+import studentImg from '../assets/gambary.png';
 import { useState } from 'react';
 
 function SingUpStudent() {

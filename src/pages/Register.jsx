@@ -1,8 +1,8 @@
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { Link } from 'react-router-dom';
 
-import studentImage from '../pictures/student-Demon.jpeg' ;
-import teacherImage from '../pictures/Kim-Namjoooon.jpeg' ;
+import studentImage from '../assets/student-Demon.jpeg' ;
+import teacherImage from '../assets/Kim-Namjoooon.jpeg' ;
 
 function Register() {
   const imgStyle = 'lg:w-96 object-cover rounded-custom cursor-pointer  shadow-200'+

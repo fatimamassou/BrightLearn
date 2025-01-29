@@ -1,7 +1,7 @@
 import Button from '../components/buttons';
-import about2 from '../pictures/about2.jpeg' ; 
-import about3 from '../pictures/about3.jpeg' ; 
-import about4 from '../pictures/about4.jpeg' ;
+import about2 from '../assets/about2.jpeg' ; 
+import about3 from '../assets/about3.jpeg' ; 
+import about4 from '../assets/about4.jpeg' ;
 
 function About () {
   return( 

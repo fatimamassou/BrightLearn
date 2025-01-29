@@ -1,8 +1,8 @@
 .home {
-    background: url('../pictures/bakgroundHome2.jpeg') center / cover no-repeat;
+    background: url('../assets/bakgroundHome2.jpeg') center / cover no-repeat;
 }
 .footer {
-    background: url('../pictures/bakgroundFooter.jpeg') center / cover no-repeat;
+    background: url('../assets/bakgroundFooter.jpeg') center / cover no-repeat;
 }
 body {
     user-select: none;
