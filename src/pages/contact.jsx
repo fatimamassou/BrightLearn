@@ -1,11 +1,11 @@
 import Input from '../components/inputs';
 import Lable from '../components/lable';
-import Phone from '../pictures/purplePhone.jpeg';
-import Gmail from '../pictures/purpleGmail.jpeg';
-import Youtube from '../pictures/youtube.jpeg';
-import Insta from '../pictures/App icon.jpeg';
-import Pinterest from '../pictures/Pinterest.jpeg';
-import Tiktok from '../pictures/Purple aesthetic icon TikTok.jpeg';
+import Phone from '../assets/purplePhone.jpeg';
+import Gmail from '../assets/purpleGmail.jpeg';
+import Youtube from '../assets/youtube.jpeg';
+import Insta from '../assets/App icon.jpeg';
+import Pinterest from '../assets/Pinterest.jpeg';
+import Tiktok from '../assets/Purple aesthetic icon TikTok.jpeg';
 
 function Contact() {
   const socailIconStyle = 'rounded-lg hover:shadow-300 transition-all duration-500';

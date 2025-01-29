@@ -1,7 +1,7 @@
-import Youtube from '../pictures/youtube.jpeg';
-import Insta from '../pictures/App icon.jpeg';
-import Pinterest from '../pictures/Pinterest.jpeg';
-import Tiktok from '../pictures/Purple aesthetic icon TikTok.jpeg';
+import Youtube from '../assets/youtube.jpeg';
+import Insta from '../assets/App icon.jpeg';
+import Pinterest from '../assets/Pinterest.jpeg';
+import Tiktok from '../assets/Purple aesthetic icon TikTok.jpeg';
 
 function Footer() {
   const socailIconStyle = 'rounded-lg hover:shadow-300 transition-all duration-500';
