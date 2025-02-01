@@ -45,7 +45,7 @@ function TetorsComponent() {
         <Category onChange={e => setSelectedSubject(e.target.value)} selectedSubject={selectedSubject}/>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,_minmax(380px,_2fr))] gap-2">
-        {filteredData.length < 0 ?
+        {filteredData.length > 0 ?
           filteredData.map(card => {
             return <Card card={card} />;
           }) :
