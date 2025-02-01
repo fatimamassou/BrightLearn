@@ -5,7 +5,7 @@ import studentImage from '../assets/student-Demon.jpeg' ;
 import teacherImage from '../assets/Kim-Namjoooon.jpeg' ;
 
 function Register() {
-  const imgStyle = 'lg:w-96 object-cover rounded-custom cursor-pointer  shadow-200'+
+  const imgStyle = 'lg:w-96 object-cover rounded-custom cursor-pointer shadow-200 '+
                     'transform transition duration-500 hover:scale-105';
   const divImgStyle = 'w-fit text-center lg:space-y-8 md:space-y-14';
   const h2style = 'text-3xl text-primary text-shadow-lg';
