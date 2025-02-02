@@ -49,14 +49,14 @@ function TetorsComponent() {
           filteredData.map(card => {
             return <Card card={card} />;
           }) :
-            <div className="flex items-center justify-center">
-              <div 
-                className={'w-2/5 tracking-wide text-primary font-semibold rounded-xl '+
+          <div className="flex items-center justify-center">
+            <div 
+              className={'w-2/5 tracking-wide text-primary font-semibold rounded-xl '+
                   'text-2xl bg-secondary h-[50px] flex items-center justify-center'}
-                  >
+            >
                 Not Found
-              </div>
             </div>
+          </div>
         }
       </div>
     </div>
