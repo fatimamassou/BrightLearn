@@ -1,6 +1,5 @@
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { Link } from 'react-router-dom';
-
 import studentImage from '../assets/student-Demon.jpeg' ;
 import teacherImage from '../assets/Kim-Namjoooon.jpeg' ;
 
