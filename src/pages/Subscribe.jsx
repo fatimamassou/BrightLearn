@@ -41,33 +41,29 @@ function SubscriptionPlans () {
               <span 
                 className="text-lg font-normal"
               >
-                  /mo
+                /mo
               </span>
             </div>
             <ul className="text-left mb-6 space-y-2">
               <li>
                 <TaskAltIcon 
                   className="text-white"
-                /> 
-                Access to recorded lessons
+                /> Access to recorded lessons
               </li>
               <li>
                 <TaskAltIcon 
                   className="text-white"
-                /> 
-                1-on-1 live coaching with tutors
+                /> 1-on-1 live coaching with tutors
               </li>
               <li>
                 <TaskAltIcon 
                   className="text-white"
-                /> 
-                Access to discussion forums
+                /> Access to discussion forums
               </li>
               <li>
                 <TaskAltIcon 
                   className="text-white"
-                />
-                 Monthly progress tracking
+                /> Monthly progress tracking
               </li>
             </ul>
             <Link to='/login'>
@@ -111,32 +107,27 @@ function SubscriptionPlans () {
                 <li>
                   <TaskAltIcon 
                     className="text-white"
-                  /> 
-                  Everything in Monthly, plus:
+                  /> Everything in Monthly, plus:
                 </li>
                 <li>
                   <TaskAltIcon 
                     className="text-white"
-                  /> 
-                  Personalized roadmaps
+                  /> Personalized roadmaps
                 </li>
                 <li>
                   <TaskAltIcon
                     className="text-white"
-                  /> 
-                   Priority booking with tutors
+                  /> Priority booking with tutors
                 </li>
                 <li>
                   <TaskAltIcon 
                     className="text-white"
-                  /> 
-                  Unlimited access to premium lessons
+                  /> Unlimited access to premium lessons
                 </li>
                 <li>
                   <TaskAltIcon 
                     className="text-white"
-                  /> 
-                  Personalized communication with instructors
+                  /> Personalized communication with instructors
                 </li>
               </ul>
             </div>
