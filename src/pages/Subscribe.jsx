@@ -16,7 +16,7 @@ function SubscriptionPlans () {
         <h1 className="text-4xl font-semibold-100 mb-6 text-primary">
           Let's Level Up Your Learning!
         </h1>
-        <div className="flex justify-center space-x-6">
+        <div className="flex justify-center space-x-10">
           {/* Monthly Plan */}
           <div 
             className={'relative bg-grey h-[500px] rounded-3xl p-6 w-[360px] space-y-6 '+
