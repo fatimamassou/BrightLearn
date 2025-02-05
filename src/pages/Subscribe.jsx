@@ -78,7 +78,7 @@ function SubscriptionPlans () {
 
           {/* Yearly Plan */}
           <div 
-            className={'relative bg-grey h-[520px] rounded-3xl w-[360px] outline outline-4 '+
+            className={'relative bg-grey h-[520px] rounded-3xl w-[360px] outline outline-3 '+
                       'outline-primary-100 hover:scale-105 ease-in-out duration-700 shadow-200'
             }>
             <div className="px-6 pt-6 space-y-6">
