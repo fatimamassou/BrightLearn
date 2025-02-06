@@ -20,7 +20,7 @@ function SubscriptionPlans () {
           {/* Monthly Plan */}
           <div 
             className={'relative bg-grey h-[500px] rounded-3xl p-6 w-[380px] space-y-6 '+
-                    'hover:scale-105 ease-in-out duration-700 shadow'
+                    'hover:scale-105 ease-in-out duration-700 shadow cursor-pointer'
             }>
             <div className="border-bg_secondary border-b-2 pb-8">
               <h2 className="text-2xl font-semibold text-primary">Monthly</h2>
@@ -79,7 +79,7 @@ function SubscriptionPlans () {
           {/* Yearly Plan */}
           <div 
             className={'relative bg-grey h-[520px] rounded-3xl w-[380px] outline outline-3 '+
-                      'outline-primary-100 hover:scale-105 ease-in-out duration-700 shadow-200'
+                      'outline-primary-100 hover:scale-105 ease-in-out duration-700 shadow-200 cursor-pointer'
             }>
             <div className="px-6 pt-6 space-y-6">
               <div className="border-bg_secondary border-b-2 pb-8">
