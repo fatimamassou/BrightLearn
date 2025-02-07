@@ -42,7 +42,9 @@ function SingUpTeacher() {
           <form onSubmit={submit} className="space-y-4">
             <div className="space-y-2">
               <div>
-                <Lable>Full Name</Lable>
+                <Lable>
+                  Full Name
+                </Lable>
                 <Input type="text" 
                   Placeholder="Full Name" 
                   value={fullName}            
