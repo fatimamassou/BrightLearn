@@ -53,7 +53,9 @@ function SingUpTeacher() {
               </div>
 
               <div>
-                <Lable>Your Email</Lable>
+                <Lable>
+                  Your Email
+                </Lable>
                 <Input type="email" 
                   Placeholder="Email Address" 
                   value={email}
@@ -62,7 +64,9 @@ function SingUpTeacher() {
               </div>
                             
               <div>
-                <Lable>Your Phone</Lable>
+                <Lable>
+                  Your Phone
+                </Lable>
                 <Input type="tel"
                   Placeholder="Phone number" 
                   onChange={(e)=> setPhone(e.target.value)} 
@@ -71,7 +75,9 @@ function SingUpTeacher() {
               </div>
 
               <div>
-                <Lable>Your Spiciality</Lable>
+                <Lable>
+                  Your Spiciality
+                </Lable>
                 <Select 
                   onChange={e => setSelectedSubject(e.target.value)} 
                   selectedSubject={selectedSubject} 
@@ -79,7 +85,9 @@ function SingUpTeacher() {
               </div>
 
               <div>
-                <Lable>Description</Lable>
+                <Lable>
+                  Description
+                </Lable>
                 <Input type="text" 
                   Placeholder="Your profile ..." 
                   onChange={(e)=> setDescription(e.target.value)}
@@ -87,7 +95,9 @@ function SingUpTeacher() {
                 />
               </div>
               <div>
-                <Lable>Password</Lable>
+                <Lable>
+                  Password
+                </Lable>
                 <Input type="password" 
                   Placeholder="Password" 
                   onChange={(e)=> setPassword(e.target.value)} 
@@ -96,7 +106,9 @@ function SingUpTeacher() {
               </div>
                             
               <div>
-                <Lable>Confirme Password</Lable>
+                <Lable>
+                  Confirme Password
+                </Lable>
                 <Input type="password" 
                   Placeholder="Confirme Password" 
                   onChange={(e)=> setConfirmePassword(e.target.value)} 
